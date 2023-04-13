@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{342AA317-C8C7-4232-8A60-069723AAFC67}" version="14.0">
+	<children>
+		<child name="Hosts" key="{4C117019-F133-46C7-8D68-86295B7EE491}" type="Hosts" typeId="{1478418C-D916-49E9-8E78-BF4561C164F9}" pluginName="Network Suite Core" path="Hosts.tcNetSuiteHosts" />
+		<child name="Jobs" key="{51839AE8-53E8-4DB0-91FD-9D829B0D7EA7}" type="Jobs" typeId="{54BD767E-85A4-491D-A3B2-EC88685BF3C8}" pluginName="Network Suite Core" path="Jobs.tcNetSuiteJobs" />
+		<child name="SynchPoints" key="{E5945D99-0FD0-493A-8897-1E561DAB3AE2}" type="SynchPoints" typeId="{0A9D19D7-1488-4023-B51C-2B5D64692E77}" pluginName="Network Suite Core" path="SynchPoints.tcNetSuiteSynchPoints" />
+	</children>
+	<variables key="{0331F369-6E02-4773-841F-E64EBC4D5FE1}">
+		<data Version="3">
+			<Items>
+				<Variable Name="CashalotCheckVersion" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue StrValue="640065006600560061006C0075006500" />
+				</Variable>
+				<Variable Name="CashalotUpdateType" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue StrValue="7400650073007400" />
+				</Variable>
+				<Variable Name="TestStatus" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="UserName" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue StrValue="4100750074006F007400650073007400200043006F006E00740072006F006C006C0065007200" />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
+	<settings key="{882CBC7C-AA41-4969-A24F-1208FEBA8A98}">
+		<settingsVersion value="14.20" />
+		<setting name="NetworkSuite_DeployMode" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Manual" />
+				<row val0="Automatic" />
+			</data>
+		</setting>
+		<setting name="NetworkSuite_Domain" type="5" value="" />
+		<setting name="NetworkSuite_Password" type="5" value="" />
+		<setting name="NetworkSuite_SharedPath" type="5" value="" />
+		<setting name="NetworkSuite_UserName" type="5" value="" />
+	</settings>
+</Root>

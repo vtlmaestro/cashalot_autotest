@@ -1,0 +1,18 @@
+﻿//USEUNIT Cashalot_Autotest
+
+function EventControl_OnStartTest(Sender)
+{
+  dotNET.Helper_x64.SessionController.DeleteSessionsByAddress("10.200.87.87");
+  dotNET.Helper_x64.SessionController.DeleteSessionsByAddress("10.200.87.51");
+}
+
+function EventControl_OnStopTest(Sender)
+{
+  
+}
+
+function EventControl_OnUnexpectedWindow(Sender, Window, LogParams)
+{
+  var object = new Objects.CashalotObject(Window);
+  new Handler.UnexpectedHandler(object).Handle();
+}

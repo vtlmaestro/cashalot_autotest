@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}" version="1400" key="{85007051-44B4-4BD0-8D97-89191328DBA0}" typeId="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}">
+	<config nodeName="Events" tlbHistory="&quot;TestComplete general events&quot;" />
+	<testData />
+	<data />
+	<children>
+		<child key="{EB7273ED-07E0-4886-962E-78745AC60B97}">
+			<config nodeName="EventControl" lastOpenedTLB="" generatedCLSID="{73059B41-0CF5-4E39-A586-C2A590CA37D2}" generatedTLBKey="{6F7BA52F-4731-4E74-A44B-95D79020A15F}" generatedEventsKey="{552FEFDF-1B44-4F37-986B-AF9107FFBA11}" generatedTLBDesc="TestComplete EventControl Control - 15.02.2021 13:26:47">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743809" infoControlName="Test Engine Events" infoEventName="OnStopTest" infoEventRealName="OnStopTest" infoDescription="Occurs when TestComplete stops running a test or when the execution of a test item is over." />
+				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743808" infoControlName="Test Engine Events" infoEventName="OnStartTest" infoEventRealName="OnStartTest" infoDescription="Occurs when TestComplete starts running a test (whether it is run from the UI or command line, or as a project test item)." />
+				<eventInfo infoTLBVer="version.dll" infoGUID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" infoID="1610743818" infoControlName="General Events" infoEventName="OnUnexpectedWindow" infoEventRealName="OnUnexpectedWindow" infoDescription="Occurs when an unexpected window appears." />
+				<handlerInfo handlerName="EventControl_OnStopTest" handlerMoniker="{40F1CDD6-33BB-4212-B648-CD5FDDD9445D}EventControl_OnStopTest" handlerEventName="OnStopTest" handlerRealIID="{F5856842-4323-49FD-B806-36E22179EF8A}" handlerRealDispID="1610743809" />
+				<handlerInfo handlerName="EventControl_OnUnexpectedWindow" handlerMoniker="{40F1CDD6-33BB-4212-B648-CD5FDDD9445D}EventControl_OnUnexpectedWindow" handlerEventName="OnUnexpectedWindow" handlerRealIID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" handlerRealDispID="1610743818" />
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+</Root>

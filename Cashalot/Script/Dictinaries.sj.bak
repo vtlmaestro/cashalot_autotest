@@ -1,0 +1,7 @@
+﻿var ACCEPT_BTNS_WORDS = ["OK","_OK", "Ok", "accept", "Accept", "ок", "Ок", "_ОК", "ОК", "Увійти", "ТАК", "Далі", "відкрити зміну"];
+var CANCEL_BTNS_WORDS = ["No", "NO", "no", "Cancel", "CANCEL", "Ні", "ні", "Відміна", "Вийти", "Закрити", "відмінити"];
+
+//Словарь окон модулей
+var MODULES_OBJ_DICT = new ActiveXObject("Scripting.Dictionary");
+MODULES_OBJ_DICT.Add("ВСІ КАСИ", "lvRROList");
+MODULES_OBJ_DICT.Add("ВІДКЛАДЕНІ ЧЕКИ", "");

@@ -1,0 +1,1 @@
+﻿var CASHALOT_OBJECT = 1;

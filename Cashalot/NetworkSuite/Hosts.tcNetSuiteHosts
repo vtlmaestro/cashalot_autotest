@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{1478418C-D916-49E9-8E78-BF4561C164F9}" version="14.0">
+	<children>
+		<child name="Host1" key="{A5EFEC9A-B49E-49BF-AE82-69698DF9A88A}">
+			<data signature="{4C283132-D38F-4C25-B72C-75AD0D8A3093}" version="14.0" caption="Host1" address="10.200.87.105" basePath="C:\SlavePrj\" userName="User1" source="" domain="" logonMode="1" password="2E1D878FD74F6D167DD15D3FD8CFA7443E64" />
+		</child>
+	</children>
+</Root>

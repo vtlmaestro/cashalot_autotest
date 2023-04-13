@@ -1,0 +1,160 @@
+﻿//USEUNIT Cashalot_Autotest
+//USEUNIT Components
+//USEUNIT Config
+//USEUNIT StepRequestType
+
+var steps;
+var cashalotApp;
+var CurrentTestStepStatus;
+var StringBuilderRunned = "";
+var Issue = "TCM-194";
+var TCName = "Перевірка відкриття модулів програми Cashalot";
+
+//TestSteps
+var TestSteps = new List();
+
+TestSteps.Add("Запуск программы");
+TestSteps.Add("Окно авторизации. Проверка функциональных кнопок");
+TestSteps.Add("Окно авторизации. Ввести не правильный пароль");
+TestSteps.Add("Окно авторизации. Ввести правильный пароль");
+TestSteps.Add("Открытие модулей программы");
+
+//Функция запуска автотеста
+function Run()
+{
+  SendTeamsMessageStartTest(Issue, TCName);
+  cashalotApp = new AppControl.CashalotApp("C:\\ProgramData\\Cashalot\\Cashalot");
+  for(var i=0; i<TestSteps.Count; i++)
+  {
+    Components.SendRequest(TestSteps.GetValue(i), StepRequestType.ExecutionStart, TestStatus.STEP_INPROCESS);
+    var steplogFolder = Log.CreateFolder(TestSteps.GetValue(i), "", pmNormal, Config.attrBlock);
+    Log.PushLogFolder(steplogFolder);
+    Test(TestSteps.GetValue(i));
+    Log.PopLogFolder();
+  }  
+    SendTeamsMessageStopTest(Issue, TCName, CurrentTestStepStatus);
+}
+
+//Обработка шагов (здесь выполняются сами тесты согласно имени шага теста)
+function Test(Step)
+{
+  switch(Step)
+  {
+    case "Запуск программы":
+      CurrentTestStepStatus =(cashalotApp.Run())? TestStatus.PASS : TestStatus.FAIL;
+    break;
+    
+    case "Окно авторизации. Проверка функциональных кнопок":
+      var loginWnd = new WinHandler.LoginForm();
+      //Проверка открытия настроек прокси
+      var proxyWin = loginWnd.ProxySettings();
+      if(proxyWin.Exists)
+      {
+        Log.Message("Появилось окно настроек прокси", "", pmNormal, Config.attrBlock);
+//        proxyWin.Cancel();
+        proxyWin.SaveProxi();
+        CurrentTestStepStatus = TestStatus.PASS;
+      } 
+      else
+        CurrentTestStepStatus = TestStatus.FAIL;
+    break;
+    
+    case "Окно авторизации. Ввести не правильный пароль":
+      var dialog = Cashalot.Login(Parameters.USERCERTNAME, "132");
+      if(!dialog.Result)
+      {
+        Log.Message(aqString.Format("Проверка на не корректный пароль прошла успешно. %s", "", pmNormal, Config.attrBlock));
+        CurrentTestStepStatus = TestStatus.PASS;
+      }
+      else
+      {
+        Log.Error(aqString.Format("Ошибка проверки на не корректный пароль. %s", dialog.Message));
+        CurrentTestStepStatus = TestStatus.FAIL;
+      }
+    break;
+    
+    case "Окно авторизации. Ввести правильный пароль":
+      var dialog = Cashalot.Login(Parameters.USERCERTNAME, Parameters.USERCERTPASSWORD);
+      if(!dialog.Result)
+      {
+        Log.Error(aqString.Format("Помилка під час запуску. %s", dialog.Message));
+        CurrentTestStepStatus = TestStatus.FAIL;
+      }
+      else
+      {
+        Log.Message("Проверка на корректный пароль прошла успешно", "", pmNormal, Config.attrBlock);
+        CurrentTestStepStatus = TestStatus.PASS;
+      }
+    break;
+    
+    case "Открытие модулей программы":
+    //Откытие кассы
+//    if(allCashBox.OpenByName(TestProperties.TestPRROName))
+//      {
+//        Log.Error(aqString.Format("Ошибка проверки модуля 'Все кассы'. %s", allCashBox.Message));
+//        CurrentTestStepStatus = TestStatus.FAIL;
+//      }
+//      else
+//      {
+//        Log.Message("Проверка модуля 'Все кассы' прошла успешно");
+//        CurrentTestStepStatus = TestStatus.PASS;
+//      }
+//    var postponedReceipt = new UCPostponedReceipts();
+    var menu = new MainMenu();
+    if(!menu.CheckOpenModules())
+      {
+        Log.Error(aqString.Format("Помилка перевірки відкриття модулів. %s", menu.Message));
+        CurrentTestStepStatus = TestStatus.FAIL;
+      }
+      else
+      {
+        Log.Message("Перевірка відкриття модулів виконана успішно!", "", pmNormal, Config.attrBlock);
+        CurrentTestStepStatus = TestStatus.PASS;
+      }
+    break;
+  }
+  
+  //Если статус теста фейл то останавливаем весь тест
+  if(CurrentTestStepStatus==TestStatus.FAIL)
+  {
+    cashalotApp.Dispose();
+    Runner.Stop(true);
+//    Runner.Halt(e.message);
+  }
+}
+
+function dridText()
+{
+  var grid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid;
+  var receipt = new Objects.Receipt(grid.Items.get_Item(1), grid);
+  receipt.Delete();
+}
+
+//function testMenuWork()
+//{
+//  var menuExpList = new List();
+//  Parameters.USERCERTNAME = "Романенко Роман Романович";
+//  Parameters.USERCERTPASSWORD = "111";
+////  ApplicationParameters.APP_PATH = "C:\\Users\\Olexandr.Filippov\\source\\prro\\CashLot\\bin";
+//  ApplicationParameters.APP_PATH = "C:\\ProgramData\\Cashalot\\Cashalot";
+//  var cashalotApp = new AppControl.CashalotApp()
+//  cashalotApp.Run();
+//  Cashalot.Login(Parameters.USERCERTNAME, Parameters.USERCERTPASSWORD);
+//  var mainmenu = new Handler.MainMenu();
+//  for(var i=0; i<mainmenu.Items.Count; i++)
+//  {
+//    var item = mainmenu.Items.GetValue(i);
+//    if(item.SubMenuExists)
+//    {
+//      for(var j=0; j<item.SubMenuItems.Count; j++)
+//      {
+//        var subItem = item.SubMenuItems.GetValue(j);
+//        mainmenu.Open([item.MenuName, subItem.MenuName]);
+//      }
+//    }
+//    else
+//    {
+//      var moduleObj = mainmenu.Open([item.MenuName]);
+//    }
+//  }
+//}

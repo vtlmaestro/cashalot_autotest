@@ -1,0 +1,3 @@
+﻿var FAIL = "FAIL";
+var PASS = "PASS";
+var BLOCK = "BLOCK";

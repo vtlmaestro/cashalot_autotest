@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="{97c7c813-687d-4408-86d3-8a8888bb6825}">
+				<Node name="variables">
+					<Node name="datav3">
+						<Node name="var0">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="300031002E00300030002E00300033003700"/>
+							</Node>
+							<Prp name="name" type="S" value="CashalotCheckVersion"/>
+						</Node>
+						<Node name="var1">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="7200650061006C00"/>
+							</Node>
+							<Prp name="name" type="S" value="CashalotUpdateType"/>
+						</Node>
+						<Node name="var2">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value=" "/>
+							</Node>
+							<Prp name="name" type="S" value="TestStatus"/>
+						</Node>
+						<Node name="var3">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="56006900740061006C00690079002E004D0069006E006900610069006C006F00"/>
+							</Node>
+							<Prp name="name" type="S" value="UserName"/>
+						</Node>
+					</Node>
+					<Prp name="version" type="I" value="3"/>
+				</Node>
+			</Node>
+			<Node name="logs">
+				<Prp name="key" type="S" value="{18BA8D7B-FC88-416A-9AB2-72B28F5AF586}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables">
+				<Node name="datav3">
+					<Node name="var0">
+						<Prp name="name" type="S" value="ExecutionGuid"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="3"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
+	</Node>
+</Nodes>

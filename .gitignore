@@ -1,0 +1,6 @@
+# Исключить все файлы с расширением .log
+*.log
+cashalot_autotest.zip
+# Игнорировать все файлы в каталоге Log/
+Log/
+Cashalot/libs/LOG/

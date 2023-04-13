@@ -1,0 +1,812 @@
+﻿//USEUNIT Objects
+//USEUNIT CONST
+//USEUNIT UtilsCashalot
+//USEUNIT Parameters
+//USEUNIT WinHandler
+
+
+
+//Модуль Відкладені чеки
+function UCPostponedReceipts()
+{
+  this.ModuleName = "Відкладені чеки";
+  
+  var grid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid;
+  
+  this.Receipts = new List();
+  
+  this.PrroList = new List();
+  
+  this.UsersList = new List();
+  
+  this.UsersUCPostponedReceiptsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox;   
+  this.PrroUCPostponedReceiptsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2;
+  this.PeriodPicker = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker;
+  
+//  for(var i=0; i<grid.Items.Count; i++)
+//  {
+//    this.Receipts.Add(new Objects.Receipt(grid.Items.get_Item(i), grid));
+//  }
+  
+  var UsersCmbObjCmb = new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox);
+  var PrroCmbObjCmb = new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2);
+  this.PrroList = PrroCmbObjCmb.Items;
+  this.UsersList = UsersCmbObjCmb.Items;
+  
+  this.SelectUserNameUCPostponedReceipts = function(userName)
+  {
+    for(i=0; i<this.UsersUCPostponedReceiptsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.UsersUCPostponedReceiptsCmb.Text.OleValue, userName, true) == 0)
+        {
+            aqUtils.Delay(500);
+            this.UsersUCPostponedReceiptsCmb.SelectNext();
+        }
+        else if(this.UsersUCPostponedReceiptsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.UsersUCPostponedReceiptsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectPrroNameUCPostponedReceipts = function(prroName)
+  {
+    for(i=0; i<this.PrroUCPostponedReceiptsCmb.wItemCount; i++)
+    {
+      if(aqString.Compare(this.PrroUCPostponedReceiptsCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+      {
+      this.PrroUCPostponedReceiptsCmb.SelectItemWithValue(this.PrroUCPostponedReceiptsCmb.Items.get_Item(i), true);
+      break;
+      }
+    }
+  }
+  
+  this.SelectStartEndPeriod = function()
+  {
+  Objects.updatePeriod(UtilsCashalot.GetCurrentDate("dd.MM.yyyy"), UtilsCashalot.GetCurrentDate("dd.MM.yyyy"));
+  }
+  
+  //не рабочий
+  this.SelectUserUCPostponedReceipts = function(user)
+  {
+    ComboBox(UsersCmbObjCmb);
+    UserObj.SelectItem(user);
+  }
+  //не рабочий
+  this.SelectPrroUCPostponedReceipts = function(prro)
+  {
+    PrroCmbObjCmb.SelectItem(prro);
+  }
+}
+
+//Модуль Касові документи
+function CashDocuments()
+{
+  this.ModuleName = "Касові документи";
+  this.PeriodPicker = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker;
+  this.OperationDocumentCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox;
+  this.PrroCashDocumentsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2;
+  this.GoCashDocumentsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox3;
+  this.UserCashDocumentsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox4;
+  
+  var grid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid;
+  
+  this.SelectUserNameCashDocuments = function(userName)
+  {
+    for(i=0; i<this.UserCashDocumentsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.UserCashDocumentsCmb.Items.get_Item(i).FIO.OleValue, userName, true) == 0)
+        {
+            aqUtils.Delay(500);
+            this.UserCashDocumentsCmb.SelectNext();
+        }
+        else if(this.UserCashDocumentsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.UserCashDocumentsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectPrroNameCashDocuments = function(prroName)
+  {
+    for(i=0; i<this.PrroCashDocumentsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.PrroCashDocumentsCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.PrroCashDocumentsCmb.SelectNext();
+        }
+        else if(this.PrroCashDocumentsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.PrroCashDocumentsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+    this.SelectGONameCashDocuments = function(goName)
+  {
+    for(i=0; i<this.GoCashDocumentsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.GoCashDocumentsCmb.Items.get_Item(i).Name.OleValue, goName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.GoCashDocumentsCmb.SelectNext();
+        }
+        else if(this.GoCashDocumentsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.GoCashDocumentsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectOperationDocumentNameCashDocuments = function(operationDocumentName)
+  {
+    for(i=0; i<this.OperationDocumentCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.OperationDocumentCmb.Items.get_Item(i).Value.OleValue, operationDocumentName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.OperationDocumentCmb.SelectNext();
+        }
+        else if(this.OperationDocumentCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.OperationDocumentCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectStartEndPeriod = function()
+  {
+  Objects.updatePeriod(UtilsCashalot.GetCurrentDate("dd.MM.yyyy"), UtilsCashalot.GetCurrentDate("dd.MM.yyyy"));
+  }
+}
+
+
+//Модуль Історія операцій
+function OperationsHistory()
+{ 
+  var mainwnd =  Aliases.CashaLot.HwndSource_mainWindow.mainWindow_;
+  this.ModuleName = "Історія операцій";
+  this.PrroOperationsHistoryCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox;
+  this.GoOperationsHistoryCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2;
+  this.UserOperationsHistoryCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox5;
+  this.TypePayCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox4;
+  this.MethodPayCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox3;
+  this.NumberCheckCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.TextBoxCheckNumber;
+  this.SimpleSearch = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.SimpleSearch;
+  this.DataContext = mainwnd.DockPanel.DataContext;
+  this.NumberOrderCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.TextBoxNumberOrder;
+
+  
+    //Відкрити Розширений пошук
+  function ShowOrHideAdditionalSearch(show)
+  {
+    //Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0) - Получаем грид
+    //Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0).Child(5) - из грида получаем рядок который меняет всю высоту в зависимости от того скрыты или нет доп. параметры поиска  
+  
+    var currentVisibleState = (Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0).Child(5).ActualHeight > 0);
+    var AdditionalSearchButton = mainwnd.DockPanel.AdvancedSearch;
+    
+    if(show)
+    {
+      if(!currentVisibleState)
+        AdditionalSearchButton.Click();
+      if(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0).Child(5).ActualHeight > 0)
+          Log.Message("Розширений пошук відкрито"); 
+      else
+          Log.Error("Розширений пошук не відкрито");
+    }
+    else
+    {
+      if(currentVisibleState)
+        AdditionalSearchButton.Click();
+      if(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0).Child(5).ActualHeight == 0)
+          Log.Message("Розширений пошук не відкрито");
+      else
+          Log.Error("Розширений пошук відкрито");
+    }
+  }
+  
+//  this.ShowAditionalSearch = ShowOrHideAdditionalSearch(true);
+//  this.HideAditionalSearch = ShowOrHideAdditionalSearch(false);
+  
+  this.SelectGONameOperationsHistory = function(goName)
+  {
+    for(i=0; i<this.GoOperationsHistoryCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.GoOperationsHistoryCmb.Items.get_Item(i).Name.OleValue, goName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.GoOperationsHistoryCmb.SelectNext();
+        }
+        else if(this.GoOperationsHistoryCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.GoOperationsHistoryCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectPrroNameOperationsHistory = function(prroName)
+  {
+    for(i=0; i<this.PrroOperationsHistoryCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.PrroOperationsHistoryCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.PrroOperationsHistoryCmb.SelectNext();
+        }
+        else if(this.PrroOperationsHistoryCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.PrroOperationsHistoryCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectUserNameOperationsHistory = function(userName)
+  {
+    ShowOrHideAdditionalSearch(true);
+
+    for(i=0; i<this.UserOperationsHistoryCmb.wItemCount; i++)
+      { 
+      if(aqString.Compare(this.UserOperationsHistoryCmb.Items.get_Item(i).FIO.OleValue, userName, true) == 0)
+        {
+          this.UserOperationsHistoryCmb.SelectItemWithValue(this.UserOperationsHistoryCmb.Items.get_Item(i), true)
+          break;
+        }
+      }
+  }
+  
+  this.SelectTypePayOperationsHistory = function(typePayName)
+  {
+    ShowOrHideAdditionalSearch(true);
+
+    for(i=0; i<this.TypePayCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.TypePayCmb.Items.get_Item(i).Value.OleValue, typePayName, true) == 0)
+        {
+            aqUtils.Delay(500);
+            this.TypePayCmb.SelectNext();
+        }
+        else if(this.TypePayCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.TypePayCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectMethodPayOperationsHistory = function(typePayName)
+  {
+    ShowOrHideAdditionalSearch(true);
+
+    for(i=0; i<this.MethodPayCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.MethodPayCmb.Items.get_Item(i).Text.OleValue, typePayName, true) == 0)
+        {
+            aqUtils.Delay(500);
+            this.MethodPayCmb.SelectNext();
+        }
+        else if(this.MethodPayCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.MethodPayCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.InsertNumberCheckOperationsHistory = function(numberCheck)
+  {
+    this.NumberCheckCmb.set_Text(numberCheck);
+  }
+  
+  this.SearchBtClick = function()
+  {
+    this.SimpleSearch.Click();
+    Log.Message("Натиснули кнопку пошуку в розділі 'Історія операцій'");
+  }
+  
+  this.SelectStartEndPeriod = function()
+  {
+  Objects.updatePeriod(UtilsCashalot.GetCurrentDate("dd.MM.yyyy"), UtilsCashalot.GetCurrentDate("dd.MM.yyyy"));
+  }
+  
+  this.ClearSearchData = function()
+  {
+    this.NumberCheckCmb.Clear();
+    this.NumberOrderCmb.Clear();
+  }
+  
+  //Завантаження чеків з ФС ДПС
+  this.LoadingChecks = function(goName, namePrro)
+  {
+    var LoadingChecksButton = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Button99;
+    var LoadingChecksWindow = Aliases.CashaLot.HwndSource_WindowDialog13.WindowDialog.Border;
+    var GOComboBox = Aliases.CashaLot.HwndSource_WindowDialog13.WindowDialog.Border.ComboBox;
+    var PrroComboBox = Aliases.CashaLot.HwndSource_WindowDialog13.WindowDialog.Border.ComboBox2;
+    var Period = Aliases.CashaLot.HwndSource_WindowDialog13.WindowDialog.Border.PeriodPicker;
+    var LoadButton = Aliases.CashaLot.HwndSource_WindowDialog13.WindowDialog.Border.Button;
+    var MessBox = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow;
+    var OkButton = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Button_OK;
+    
+    function SelectGO(nameGo)
+    {
+      for(i=0; i<GOComboBox.wItemCount; i++)
+       { 
+         if(aqString.Compare(GOComboBox.Items.get_Item(i).Name.OleValue, nameGo, true) == 0)
+         {
+          GOComboBox.SelectItemWithValue(GOComboBox.Items.get_Item(i), true)
+          break;
+         }
+       }
+    }
+    
+    function SelectPrro(prroName)
+    {
+      for(i=0; i<PrroComboBox.wItemCount; i++)
+       { 
+         if(aqString.Compare(PrroComboBox.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+         {
+          PrroComboBox.SelectItemWithValue(PrroComboBox.Items.get_Item(i), true)
+          break;
+         }
+       }
+    }
+    
+    function SetPeriod()
+    {
+      Objects.updatePeriod(UtilsCashalot.GetCurrentDate("dd.MM.yyyy"), UtilsCashalot.GetCurrentDate("dd.MM.yyyy"));
+    }
+    
+    //Нажать на кнопку Завантажити чеки
+    LoadingChecksButton.Click();
+    
+    if(Aliases.CashaLot.HwndSource_WindowDialog13.WaitWPFObject("WindowDialog", "Завантаження чеків з ФС ДПС", 7000).Exists)
+    {
+      SelectGO(goName);
+      SelectPrro(namePrro);
+      SetPeriod();
+      LoadButton.Click();
+      WinHandler.InsertPWD();
+      while(Aliases.CashaLot.HwndSource_AnimatedWaitView.AnimatedWaitView.StackPanel.Exists)
+      {
+        if(!Aliases.CashaLot.HwndSource_AnimatedWaitView.AnimatedWaitView.StackPanel.Exists)
+        {
+          break;
+        }
+        aqUtils.Delay(2000);
+      }
+      if(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.WaitWPFObject("CustomMessageBoxWindow", "*", 7000).Exists && aqString.Compare(MessBox.Message.OleValue, LOADSUCCESS, true)==0)
+      {
+        OkButton.Click();
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
+  }
+  
+  //Відправити дані
+  this.SendData = function()
+  {
+    var SendDataButton =  Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Button2;
+    var MessBoxTxt = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.Textblock;
+    var OkButton = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.Button;
+    var MessBox = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border;  
+       
+    //Нажать на кнопку Відправити дані
+    SendDataButton.Click();
+    WinHandler.InsertPWD();
+    aqUtils.Delay(1500);
+    if(MessBox.Exists)
+    {
+     var messageBoxObj = new Objects.MessageBox(MessBox);
+     if(aqString.Compare(messageBoxObj.Text, SYNCSESSIONNOTFOUND, true) == 0)
+     {
+      MessBox.Button.Click();
+      Log.Message("Під час завантаження даних отримано повідомлення: " + SYNCSESSIONNOTFOUND);
+      return true;
+     }
+    }
+    while(Aliases.CashaLot.HwndSource_AnimatedWaitView.AnimatedWaitView.StackPanel.Exists)
+    {
+     if(!Aliases.CashaLot.HwndSource_AnimatedWaitView.AnimatedWaitView.StackPanel.Exists)
+      {
+       break;
+      }
+     aqUtils.Delay(2000);
+    }
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject("WindowDialog", "*", 5000).Exists && aqString.Compare(MessBoxTxt.Text.OleValue, SYNCSUCCESS, true)==0)
+    {
+      OkButton.Click();
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+} 
+
+
+//Создание кассовых документов
+function CreateCashDocument()
+{
+  var ConfirmPWDWindow = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd;
+  var CreateDocumentBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.CreateDocument;
+  var CreateWindowDialog = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border;
+  var CashDotumentsType = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType;
+  //Службова операція
+  var ServiceOperationCheckbox = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.ItemsControl.Checkbox;
+  //Акт
+  var AktCheckbox = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.ItemsControl.Checkbox2;
+  //Службове внесення
+  var OfficialPayment = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.typesTemplate.CustomFocusBar;
+  //Службова видача
+  var OfficialGiving = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.typesTemplate.CustomFocusBar2;
+  //Видача коштів при поверненні товару
+  var GivingMoneyReturnGoods = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.typesTemplate.CustomFocusBar;
+  //Скасування помилкової суми розрахунків (сторно)
+  var CancelWrongSumReversal = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.typesTemplate.CustomFocusBar2;
+  //Скасування помилкової суми розрахунків (видатковий чек)
+  var CancelWrongSumExpenseCheck = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.typesTemplate.CustomFocusBar3;
+  //Кнопка Створити
+  var CreateBtn = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.Button;
+  //Кнопка Відмінити
+  var CancelBtn = Aliases.CashaLot.HwndSource_WindowDialog6.WindowDialog.Border.UCCashDotumentsType.Button2;
+  //Створений касовий документ
+  var DocumentForPrint = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCDocumentForPrint;
+  //Окно створення Акта повернення
+  var ActPrepareWindow = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.UCActPrepare;
+  
+  //Створити Касові документи 
+  this.CreateCashDoc = function()
+  {
+  var CreateCashDocBtn = new Objects.Button(CreateDocumentBtn);
+  CreateCashDocBtn.ClickBtn();
+  }
+  
+  //Обрати Службова операція
+  this.SelectServiceOperation = function()
+  {
+    ServiceOperationCheckbox.Click();
+  }
+  
+  //Обрати Акт
+  this.SelectAkt = function()
+  {
+   AktCheckbox.Click(); 
+  }
+  
+  //Створити Службове внесення
+  this.CreateOfficialPayment = function()
+  {
+    var NewTransactionWindow7 = Aliases.CashaLot.HwndSource_WindowDialog7.WindowDialog.UCNewTransaction;
+    var Sum7 = Aliases.CashaLot.HwndSource_WindowDialog7.WindowDialog.UCNewTransaction.txtSum;
+    var Comment7 = Aliases.CashaLot.HwndSource_WindowDialog7.WindowDialog.UCNewTransaction.txtComment;
+    var OkBtn7 = Aliases.CashaLot.HwndSource_WindowDialog7.WindowDialog.UCNewTransaction.btnOk;
+    var windowDialogSign = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.pwdTextControl;
+    var DocumentOfficialPaymentForPrint = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCDocumentForPrint;
+    
+    this.SelectServiceOperation();
+    OfficialPayment.Click();
+    CreateBtn.Click();
+    Sum7.set_Text(SUM);
+    Comment7.set_Text(USERCOMMECT);
+    OkBtn7.Click();
+    while(!windowDialogSign.Exists && !DocumentOfficialPaymentForPrint.Exists)
+    {
+    aqUtils.Delay(1000);
+    Log.Message("Очикування вікна підпису або друкованної форми 'Службового внесення'");
+    }
+    if(windowDialogSign.Exists)
+    {
+    WinHandler.InsertPWD();
+    }
+    while(!DocumentOfficialPaymentForPrint.Exists)
+    {
+     aqUtils.Delay(1000); 
+     Log.Message("Очикування вікна друкованної форми 'Службового внесення'");
+    }
+    DocumentOfficialPaymentForPrint.WaitWPFObject("UCDocumentForPrint", "*", 500);
+    if(DocumentOfficialPaymentForPrint.Exists && aqString.Compare(DocumentOfficialPaymentForPrint.DataContext.Document.DocumentVM.TypeName.OleValue, OFFICPAYMENT, true) == 0)
+    {
+      DocumentOfficialPaymentForPrint.btnReady.ClickButton();
+      return true;
+    }
+    else
+     {
+      return false;
+     }
+ }
+  
+  //Створити Службова видача
+  this.CreateOfficialGiving = function()
+  {
+    var NewTransactionWindow8 = Aliases.CashaLot.HwndSource_WindowDialog8.WindowDialog.UCNewTransaction;
+    var Sum8 = Aliases.CashaLot.HwndSource_WindowDialog8.WindowDialog.UCNewTransaction.txtSum;
+    var Comment8 = Aliases.CashaLot.HwndSource_WindowDialog8.WindowDialog.UCNewTransaction.txtComment;
+    var OkBtn8 = Aliases.CashaLot.HwndSource_WindowDialog8.WindowDialog.UCNewTransaction.btnOk;
+    var windowDialogSign = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.Grid;
+    var DocumentOfficialGivingForPrint = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCDocumentForPrint;
+    
+    this.SelectServiceOperation();
+    OfficialGiving.Click();
+    CreateBtn.Click();
+    Sum8.set_Text(SUM);
+    Comment8.set_Text(USERCOMMECT);
+    OkBtn8.Click();
+    while(!windowDialogSign.Exists && !DocumentOfficialGivingForPrint.Exists)
+    {
+    aqUtils.Delay(1000);
+    Log.Message("Очикування вікна підпису або друкованної форми 'Службової видачи'");
+    }
+    if(windowDialogSign.Exists)
+    {
+    WinHandler.InsertPWD();
+    }
+    while(!DocumentOfficialGivingForPrint.Exists)
+    {
+     aqUtils.Delay(1000); 
+     Log.Message("Очикування вікна друкованної форми 'Службової видачи'");
+    }
+    DocumentOfficialGivingForPrint.WaitWPFObject("UCDocumentForPrint", "*", 500);
+    if(DocumentOfficialGivingForPrint.Exists && aqString.Compare(DocumentOfficialGivingForPrint.DataContext.Document.DocumentVM.TypeName.OleValue, OFFICGIVING, true) == 0)
+    {
+      DocumentOfficialGivingForPrint.btnReady.ClickButton();
+      return true;
+    }
+    else
+     {
+      return false;
+     }
+  }
+  
+  //Створити Видача коштів при поверненні товару
+  this.CreateGivingMoneyReturnGoods = function()
+  {
+    //Створити чек
+    
+    this.SelectAkt();
+    GivingMoneyReturnGoods.Click();
+    CreateBtn.Click();
+  }
+  
+  //Створити Скасування помилкової суми розрахунків (сторно)
+  this.CreateCancelWrongSumReversal = function()
+  {
+    this.SelectAkt();
+    CancelWrongSumReversal.Click();
+    CreateBtn.Click();
+  }
+
+  //Створити Скасування помилкової суми розрахунків (видатковий чек)
+  this.CreateCancelWrongSumExpenseCheck = function()
+  {
+    this.SelectAkt();
+    CancelWrongSumExpenseCheck.Click();
+    CreateBtn.Click();
+  }
+  
+  //Перевірка наявності вікна для створення Акта повернення
+  function CheckExistActPrepareWindow()
+  {
+  if(Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject("WindowDialog", "*", 3000).Exists)
+    {
+    return true;
+    }
+   else
+     {
+     return false;
+     }
+  }
+  
+
+  //Обрати ПРРО для Акта повернення
+  this.SelectPrroActPrepare = function(prroName)
+  {  
+  //Комбобокс для выбора ПРРО
+  var ActPrepareCmb = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.UCActPrepare.Combobox;
+    if(CheckExistActPrepareWindow())
+    {
+      for(i=0; i<ActPrepareCmb.wItemCount; i++)
+      { 
+      if(aqString.Compare(ActPrepareCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+        {
+          ActPrepareCmb.SelectItemWithValue(ActPrepareCmb.Items.get_Item(i), true)
+          break;
+        }
+      }
+    }
+    else
+    {
+      Log.Error("Відсутнє вікно для створення акту");
+    }
+  }
+  
+  //Ввод фискального номера для Акта повернення
+   this.InsertFN = function(fiscalNumber)
+  {
+    //Поле для ввода ФН
+    var FiscalNumberTextbox = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.UCActPrepare.FiscalNumberTextbox;
+    if(CheckExistActPrepareWindow())
+    {
+      FiscalNumberTextbox.set_Text(fiscalNumber);
+    }
+    else
+    {
+      Log.Error("Відсутнє вікно для створення акту");
+    }
+  }
+  
+  //Нажать Далее
+  this.NextButton = function()
+  {
+    if(CheckExistActPrepareWindow())
+    {
+    var NextBtn = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.UCActPrepare.Button;
+    var nextBtnObj = new Objects.Button(NextBtn);
+    nextBtnObj.ClickBtn();
+    }
+  }
+  
+   //Створення Акта повернення
+   this.ActOnGivingManyReturnGoods = function(prroName, fiscalNumber)
+  {
+    var ActOnGivingManyReturnGoodsWindow = Aliases.CashaLot.HwndSource_WindowDialog10.WindowDialog.Border;
+    var SaveBtn = Aliases.CashaLot.HwndSource_WindowDialog10.WindowDialog.Border.Button;
+    var ScrollViewerText = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow4.CustomMessageBoxWindow;
+    var CustomerTxt = Aliases.CashaLot.HwndSource_WindowDialog10.WindowDialog.Border.TextBox;
+    var IdentityDocumentTxt = Aliases.CashaLot.HwndSource_WindowDialog10.WindowDialog.Border.TextBox2;
+    var InfoIdentityDocumentTxt= Aliases.CashaLot.HwndSource_WindowDialog10.WindowDialog.Border.TextBox3;
+    var CommentTxt = Aliases.CashaLot.HwndSource_WindowDialog10.WindowDialog.Border.TextBox4;
+    
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject("WindowDialog", "*", 3000).Exists)
+    {
+    this.SelectPrroActPrepare(prroName);
+    this.InsertFN(fiscalNumber);
+    this.NextButton();
+    }
+    else
+    {
+      Log.Error("Відсутнє вікно для обрання ПРРО та ФН чека повернення");
+    }
+    
+    if(Aliases.CashaLot.HwndSource_WindowDialog10.WaitWPFObject("WindowDialog", "Акт про видачу коштів при поверненні товару", 3000).Exists)
+    {
+      CustomerTxt.set_Text(CUSTOMER);
+      IdentityDocumentTxt.set_Text(PASSPORT);
+      InfoIdentityDocumentTxt.set_Text(INFOPASSPORT);
+      CommentTxt.set_Text(USERCOMMECT);
+      SaveBtn.Click();
+      if(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow4.WaitWPFObject("CustomMessageBoxWindow", "*", 3000).Exists && aqString.Compare(ScrollViewerText.Grid.Scrollviewer.WPFControlText, DOCSUCCESSAVE, true)==0)
+      {
+        ScrollViewerText.Button_OK.Click();
+        return true;
+      }
+    }
+    else
+    {
+      return false;
+    }
+  }
+  
+   //Створення Акта скасування помилкової суми розрахунків (сторно)
+   this.ActCancelErrorAmountCalculationsStorno = function(prroName, fiscalNumber)
+  {
+
+    var SaveBtn = Aliases.CashaLot.HwndSource_WindowDialog11.WindowDialog.Border.Button;
+    var  ErrorDescriptionTxt = Aliases.CashaLot.HwndSource_WindowDialog11.WindowDialog.Border.Textbox;
+    var UserCommentTxt = Aliases.CashaLot.HwndSource_WindowDialog11.WindowDialog.Border.TextBox2;
+    var ScrollViewerText = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow4.CustomMessageBoxWindow;
+    
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject("WindowDialog", "*", 3000).Exists)
+    {
+    this.SelectPrroActPrepare(prroName);
+    this.InsertFN(fiscalNumber);
+    this.NextButton();
+    }
+    else
+    {
+      Log.Error("Відсутнє вікно для обрання ПРРО та ФН чека повернення");
+    }
+    
+    if(Aliases.CashaLot.HwndSource_WindowDialog11.WaitWPFObject("WindowDialog", "Акт про скасування помилкової суми розрахунків (сторно)", 3000).Exists)
+    {
+      ErrorDescriptionTxt.set_Text(ERRORDESCRIPTION);
+      UserCommentTxt.set_Text(USERCOMMECT);
+      SaveBtn.Click();
+      if(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow4.WaitWPFObject("CustomMessageBoxWindow", "*", 3).Exists && aqString.Compare(ScrollViewerText.Grid.Scrollviewer.WPFControlText, DOCSUCCESSAVE, true)==0)
+      {
+        ScrollViewerText.Button_OK.Click();
+        return true;
+      }
+    }
+    else
+    {
+      return false;
+    }
+    
+  }
+  
+   //Створення Акта скасування помилкової суми розрахунків (видатковий чек)
+   this.ActCancelErrorAmountCalculations = function(prroName, fiscalNumber)
+  {
+
+    var SaveBtn = Aliases.CashaLot.HwndSource_WindowDialog12.WindowDialog.Border.Button;
+    var ErrorDescriptionTxt = Aliases.CashaLot.HwndSource_WindowDialog12.WindowDialog.Border.Textbox;
+    var UserCommentTxt = Aliases.CashaLot.HwndSource_WindowDialog12.WindowDialog.Border.TextBox2;
+    var ScrollViewerText = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow4.CustomMessageBoxWindow;
+    
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject("WindowDialog", "*", 3000).Exists)
+    {
+    this.SelectPrroActPrepare(prroName);
+    this.InsertFN(fiscalNumber);
+    this.NextButton();
+    }
+    else
+    {
+      Log.Error("Відсутнє вікно для обрання ПРРО та ФН чека повернення");
+    }
+
+    if(Aliases.CashaLot.HwndSource_WindowDialog12.WaitWPFObject("WindowDialog", "Акт про скасування помилкової суми розрахунків (видатковий чек)", 3).Exists)
+    {
+      ErrorDescriptionTxt.set_Text(ERRORDESCRIPTION);
+      UserCommentTxt.set_Text(USERCOMMECT);
+      SaveBtn.Click();
+      if(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow4.WaitWPFObject("CustomMessageBoxWindow", "*", 3000).Exists && aqString.Compare(ScrollViewerText.Grid.Scrollviewer.WPFControlText, DOCSUCCESSAVE, true)==0)
+      {
+        ScrollViewerText.Button_OK.Click();
+        return true;
+      }
+    }
+    else
+    {
+      return false;
+    }
+  }
+}

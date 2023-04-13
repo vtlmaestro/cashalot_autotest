@@ -1,0 +1,76 @@
+﻿//USEUNIT SettingsUsers
+//USEUNIT Objects
+
+function CheckListUsers()
+{
+  var listUser = new ListUser();
+  
+  this.ClearSearchText = function()
+  {
+    listUser.ClearSetSearchText();
+  }
+  
+  //перевірка наявності в ListView юзера, який встанволений в SearchText
+  this.CheckSetSearch = function(userName)
+  {
+    var nameUser = listUser.SetSearchUser(userName);
+    if(aqString.Compare(nameUser, userName, true) == 0)
+    {
+     return true;  
+    }
+    else
+    {
+      return false;
+    }
+  }
+  //Обрати потрібного користувача в ListView
+  this.SelectUserOnList = function(nameUser)
+  {
+    var user = listUser.GetProfileUser(nameUser);
+    if(!Objects.IsNullOrUndefined(user))
+    {
+      if(aqString.Compare(user.Name.OleValue, nameUser, true) == 0)
+      {
+      var userCashalot = new UserCashalot();
+      userCashalot.BoolValue = true;
+      userCashalot.IsCurrentUserBoolValue = user.IsCurrentUser;
+      userCashalot.IsUserActiveBoolValue =  user.IsUserActive;
+      userCashalot.Email = user.Email.OleValue;
+      userCashalot.Comment = user.Comment.OleValue;
+      userCashalot.IPN = user.IPN.OleValue;
+      userCashalot.Login = user.Login.OleValue;
+      userCashalot.Name = user.Name.OleValue;
+      userCashalot.Telephone = user.Telephone.OleValue;
+      return userCashalot;
+      }
+    }
+    else
+    {
+      return false;
+    }
+  }
+  
+  this.CheckUserData = function(nameUser, positionUser, ipn)
+  {
+    var userDataObj = new DataUser();
+    var userData = userDataObj.GetUserData();
+    if(!IsNullOrUndefined(userData))
+    {
+      if(aqString.Compare(userData.Name, nameUser, true) == 0 && aqString.Compare(userData.Position, positionUser, true) == 0 && aqString.Compare(userData.IPN, ipn, true) == 0)
+      {
+      userData.BoolValue = true;
+      return userData;
+      }
+      else
+      {
+      return false;
+      }
+    }
+    else
+    {
+      Log.Message("Дані для вказаного користувача не знайдено");
+      return false;
+    }
+  }
+  
+}

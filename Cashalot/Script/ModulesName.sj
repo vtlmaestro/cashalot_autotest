@@ -1,0 +1,19 @@
+﻿//ModulesName
+var ALLCASH = "Всі каси";
+var OPERATION = "Операції";
+var POSTPONEDCHECKS = "Відкладені чеки";
+var CASHDOCUMENTS = "Касові документи";
+var HISTORYOPERATIONS = "Історія операцій";
+var ZVITY = "Звіти";
+var ZZVIT = "Z-звіт";
+var DAILYREPORTS = "Денні звіти";
+var PERIODREPORTS = "Періодичні звіти";
+var SOLDGOODS = "Про реалізовані товари";
+var DIRECTORY = "Довідники"; 
+var NOMENCLATURE = "Номенклатура";
+var LOYALTYPROGRAMS = "Програми лояльності";
+var SETTINGS = "НАЛАШТУВАННЯ";
+var GENERALSETTINGS = "Загальні налаштування";
+var SERVICEOPERATIONS = "Сервісні операції";
+var ADDITIONALEQUIPMENT = "Додаткове обладнання";
+var USERS = "Користувачі";

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Extension">
+			<child name="DataBaseAccess" key="{78A8C0AE-F14B-44E2-8902-1F5755A34BE9}" path="DataBaseAccess.sj" />
+			<child name="XmlHelper" key="{D89F0FDF-3494-41ED-ACE7-2D32BCA8048E}" path="XmlHelper.sj" />
+			<child name="Components" key="{EA5B00A8-5432-4725-9166-F09109AEFD07}" path="Components.sj" />
+			<child name="UtilsCashalot" key="{F0B7A00C-079B-4354-9AC1-4809B2823D97}" path="UtilsCashalot.sj" />
+		</folder>
+		<folder name="Core">
+			<folder name="Handlers">
+				<folder name="Common">
+					<child name="ModulsHandlerAllCash" key="{34CA6506-F159-4DA2-846B-DFBBE3B5421F}" path="ModulsHandlerAllCash.sj" />
+					<child name="Objects" key="{CB1FF3CF-9D6A-4FAE-AFB4-93F79B1EF335}" path="Objects.sj" />
+					<child name="WinHandler" key="{DD627D9E-23BC-46F6-9B5F-F9858146375F}" path="WinHandler.sj" />
+					<child name="Handler" key="{E0D25280-11B2-465D-B325-8DED3B7F3A25}" path="Handler.sj" />
+					<child name="ModulsHandlerOperations" key="{C8B99F13-2D55-4852-BEDA-87E414A7333F}" path="ModulsHandlerOperations.sj" />
+					<child name="ModulsHandlerReport" key="{61AC69F1-8170-44DC-89A2-96BBA8F2EAFA}" path="ModulsHandlerReport.sj" />
+					<child name="GridWorkOpenShift" key="{B33DBCDA-CB5E-48AC-B3A2-3FEE1AC498A9}" path="GridWorkOpenShift.sj" />
+					<child name="GetObject" key="{10CC65EC-A54D-489C-9D77-79D8A0D67856}" path="GetObject.sj" />
+					<child name="GridAsideCheck" key="{2C71D6FD-9C47-438D-B39E-D0D075392F42}" path="GridAsideCheck.sj" />
+					<child name="GridOperationsHistory" key="{3451B90D-4D09-4698-BE6D-10FDABE3DDB1}" path="GridOperationsHistory.sj" />
+					<child name="GridDayReports" key="{C4A6D880-743C-4023-9504-900DE5C024B0}" path="GridDayReports.sj" />
+					<child name="ModulsHandlerDirectory" key="{D120DCDF-2F45-47A5-93B0-A8855674C0C4}" path="ModulsHandlerDirectory.sj" />
+					<child name="GridDirectoryNomenklatura" key="{9CBA142F-2E5E-4392-988A-9BC8297E4B6E}" path="GridDirectoryNomenklatura.sj" />
+					<child name="ModulsHandlerSettings" key="{42619ADF-F760-4308-8DC4-81DF5816B87D}" path="ModulsHandlerSettings.sj" />
+					<child name="ModulGeneralSettings" key="{BB1336A2-0BAF-47EA-A912-75D8A346C916}" path="ModulGeneralSettings.sj" />
+					<child name="GeneralSettingsProxyServer" key="{3D8F0F62-3E89-4686-880A-5C34B9635DFE}" path="GeneralSettingsProxyServer.sj" />
+					<child name="GeneralSettingsBusinessUnit" key="{869D9523-1750-4293-95D7-8BB174BC9624}" path="GeneralSettingsBusinessUnit.sj" />
+					<child name="GeneralSettingsPRRO" key="{A8D4173A-A5F6-483C-80AC-D83C3D468D3B}" path="GeneralSettingsPRRO.sj" />
+					<child name="ModulSettingsUsers" key="{7A6566F2-EBCA-4242-B4A1-393151E1C062}" path="ModulSettingsUsers.sj" />
+					<child name="SettingsUsers" key="{964022D1-0681-4696-958E-0E2B959B76AD}" path="SettingsUsers.sj" />
+					<child name="ModulAdditionalEquipment" key="{C20B01D9-3E43-434D-88BF-2EB818662DBE}" path="ModulAdditionalEquipment.sj" />
+					<child name="AdditionalEquipmentPrinter" key="{008C44DC-1A5B-440C-BB96-A59EC802B4C3}" path="AdditionalEquipmentPrinter.sj" />
+					<child name="AdditionalEquipmentPosTerminal" key="{98D09B76-D473-45FA-B3B9-1761700B5FBE}" path="AdditionalEquipmentPosTerminal.sj" />
+					<child name="AdditionalEquipmentScales" key="{A026DB05-CC9C-47BD-BEB1-20257B81CCC1}" path="AdditionalEquipmentScales.sj" />
+				</folder>
+				<child name="EventControl" key="{40F1CDD6-33BB-4212-B648-CD5FDDD9445D}" path="EventControl.sj" />
+			</folder>
+			<folder name="ENUMS">
+				<child name="WNDTYPES" key="{DF146B55-86B6-417B-8171-4433723EA5E0}" path="WNDTYPES.sj" />
+				<child name="TestStatus" key="{F83191A6-9797-4C73-848F-400E60E9818F}" path="TestStatus.sj" />
+				<child name="ProxySettingsType" key="{536F8385-5FF8-41DD-A4C3-D9B76FD21F42}" path="ProxySettingsType.sj" />
+				<child name="ObjectTypes" key="{6B000729-066E-4769-B573-8D65A8AB19D9}" path="ObjectTypes.sj" />
+				<child name="Types" key="{520972C9-E4B8-40B5-8590-E1EEB821D635}" path="Types.sj" />
+				<child name="StepRequestType" key="{C092DACA-89FA-401D-9DA3-50BD8D55A426}" path="StepRequestType.sj" />
+			</folder>
+			<child name="AppControl" key="{33FA8F4E-B5CD-4D25-8096-312950D2BE9C}" path="AppControl.sj" />
+			<child name="Configurations" key="{141CCF9E-E5F3-4150-B55D-502E65DBFFA3}" path="Configurations.sj" />
+			<child name="Cashalot_Autotest" key="{E336EF45-F661-45C0-B2AE-86A4E9F31993}" path="Cashalot_Autotest.sj" />
+			<child name="Cashalot" key="{CB76D862-C3AC-4F74-A0D2-5C88D1CDEA72}" path="Cashalot.sj" />
+		</folder>
+		<folder name="TestData">
+			<child name="Parameters" key="{89DEA6B1-4540-40BB-8F72-0E20FFD81D83}" path="Parameters.sj" />
+			<child name="ApplicationParameters" key="{0C17D1EF-69DC-4A76-BE3A-1D9838ACD1B4}" path="ApplicationParameters.sj" />
+			<child name="CONST" key="{DE7FE9B4-B4EF-46AF-BC88-A9750F8BFE31}" path="CONST.sj" />
+			<child name="Dictinaries" key="{D87FC187-1818-4E5B-B6AB-6524D058F249}" path="Dictinaries.sj" />
+			<child name="ModulesName" key="{08F387BF-9958-44B0-87A7-3D42408C6513}" path="ModulesName.sj" />
+		</folder>
+		<folder name="TESTS">
+			<child name="Run" key="{77B089B7-114D-4A5A-A70D-566D86F0C729}" path="Run.sj" />
+			<child name="TCM233" key="{814B42E1-F799-468C-83C9-E0F1D170A732}" path="TCM233.sj" />
+			<child name="TCM234" key="{315E5948-D89E-495C-AB44-F31F8EBDEBBC}" path="TCM234.sj" />
+			<child name="TCM235" key="{27ECDD0A-0EA5-4496-9E96-793DBFB84C09}" path="TCM235.sj" />
+			<child name="TestRun" key="{C35B412B-67BB-40CE-AE44-87E44D3C56D7}" path="TestRun.sj" />
+			<child name="TCM236" key="{A01E7178-FDF3-447F-BBE2-A41ADDA5DBB0}" path="TCM236.sj" />
+			<child name="TCM237" key="{025CBE07-A86D-4047-80E2-1D1C29FCE01B}" path="TCM237.sj" />
+		</folder>
+		<folder name="Data">
+			<child name="Config" key="{D9525732-D363-4C69-970A-165D6B466E17}" path="Config.sj" />
+			<child name="DictionaryData" key="{F6ECB307-18E5-4B00-8F51-64E30F9BC549}" path="DictionaryData.sj" />
+		</folder>
+	</children>
+</Root>

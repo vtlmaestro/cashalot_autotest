@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{4C74BFE8-45E9-4BFB-8A6C-F586C3D02BA7}">
+	<children>
+		<child name="CashaLot" key="{DFEE809C-B91F-4578-9B9F-9D348F19F788}" path="Cashalot\CashaLot.mds" />
+	</children>
+	<testItems key="{2BCAF7F5-5D4B-4AB7-9CE9-A1F437D8E714}">
+		<children>
+			<testItem key="{DFEE809C-B91F-4578-9B9F-9D348F19F788}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{E1B653B8-9D2E-46C4-B86C-E7D621B3AE5B}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{2CD02707-32B5-40AD-9858-7742CEC003A4}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>

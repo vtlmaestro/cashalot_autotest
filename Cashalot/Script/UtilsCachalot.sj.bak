@@ -1,0 +1,52 @@
+﻿function GetGUID()
+{
+  Log.Message("Генеруємо GUID")
+  var TypeLib = new ActiveXObject("Scriptlet.TypeLib")
+  return TypeLib.Guid;
+}
+
+//  var guid = UtilsCachalot.GetGUID();
+//  Project.Variables.ExecutionGuid = aqString.SubString(guid, 1 , aqString.GetLength(guid)-4);
+
+function StringBuilder()
+{
+  var strings = new Array();
+  
+  this.Append = function(value)
+  {
+    strings.push(value);
+  }
+  
+  this.AppendLine = function(value)
+  {
+   strings.push(value+dotNET.System.Environment.NewLine); 
+  }
+  
+  this.Get = function()
+  {
+   return aqString.Replace(strings.toString(),dotNET.System.Environment.NewLine+",",dotNET.System.Environment.NewLine);
+  }
+  
+  this.ToString = function()
+  {
+    return this.Get();
+  }
+  
+  this.Clear = function()
+  {
+    strings = new Array();
+  }
+  
+  return this;
+}
+
+//вывод свойств объекта
+function showProps(obj, objName) {
+  var result = "";
+  for (var i in obj) {
+    if (obj.hasOwnProperty(i)) {
+    result += objName + "." + i + " = " + obj[i] + "\n";
+    }
+  }
+  return result;
+}

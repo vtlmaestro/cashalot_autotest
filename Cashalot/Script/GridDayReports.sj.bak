@@ -1,0 +1,26 @@
+﻿//USEUNIT Parameters
+
+//Грид Денні звіти
+function DockPanelGridDayReports()
+{
+ var GridDayReportsDocPanel = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid;
+
+ //Знайти Денний звіт на поточну дату та з вказанним фискальним номером (fiscalNumber)
+ this.FindDayReport = function(fiscalNumber)
+ {
+  var result;
+  for(i=0; i<GridDayReportsDocPanel.Items.Count; i++)
+  {
+   if(GridDayReportsDocPanel.Items.get_Item(i).OrderDate.Date.Compare(GridDayReportsDocPanel.Items.get_Item(i).OrderDate.Date.OleValue, DATENOW) == 0 
+   && GridDayReportsDocPanel.Items.get_Item(i).FiscalNumber.OleValue == fiscalNumber)
+    {
+     result = true;
+    }
+    else
+    {
+      result = false;
+    }
+  }
+  return result;
+ }
+}

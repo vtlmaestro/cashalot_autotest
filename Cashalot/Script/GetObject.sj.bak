@@ -1,0 +1,117 @@
+﻿//USEUNIT Config
+//USEUNIT GridWorkOpenShift
+//USEUNIT Objects
+//USEUNIT Parameters
+
+
+//Получить объект зарегистрированного чека, принимает тип оплаты, артикул и имя ПРРО
+function GetReceiptObject(typePay, VendorCode, namePrro)
+{
+  var dataContextReceiptVM = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel;
+  var receiptGrid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid;
+  var PanelFiscalizedCheck = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized;
+  
+  //Обрати відкриту касу
+  var menu = new Handler.MainMenu();
+  var listOfShop = menu.OpenListOfShop();
+  listOfShop.OpenByName(namePrro);
+  
+  var workGridShift = new GridWorkOpenShift.WorkOpenShiftGrid();
+  workGridShift.CreateNewCheck(VendorCode);
+  var crtPayment = new workGridShift.CreatePayment();
+  switch(typePay)
+   {
+      case "Оплата без решти":
+      if(crtPayment.makePaymentWithoutRemainder())
+      {
+        Log.Message("Чек 'Оплата без решти' створено успішно", "", pmNormal, Config.attrBlock);
+      }
+      else
+      {
+         Log.Error("Чек 'Оплата без решти' не створено");
+      }
+      break;
+      
+      case "Знижка":
+      if(crtPayment.makeDiscount())
+      {
+        Log.Message("Чек 'Знижка' створено успішно", "", pmNormal, Config.attrBlock);
+      }
+      else
+      {
+         Log.Error("Чек 'Знижка' не створено");
+      }
+      break;
+      
+      case "Оплата готівкою":
+      if(crtPayment.makePaymentCash())
+      {
+        Log.Message("Чек 'Оплата готівкою' створено успішно", "", pmNormal, Config.attrBlock);
+      }
+      else
+      {
+         Log.Error("Чек 'Оплата готівкою' не створено");
+      }
+      break;
+      
+      case "Оплата карткою":
+      if(crtPayment.makePaymentCard())
+      {
+        Log.Message("Чек 'Оплата карткою' створено успішно", "", pmNormal, Config.attrBlock);
+      }
+      else
+      {
+         Log.Error("Чек 'Оплата карткою' не створено");
+      }
+      break;
+      
+      case "Комбінована оплата":
+      if(crtPayment.makeCombinedPayment())
+      {
+        Log.Message("Чек 'Комбінована оплата' створено успішно", "", pmNormal, Config.attrBlock);
+      }
+      else
+      {
+         Log.Error("Чек 'Комбінована оплата' не створено");
+      }
+      break;
+   }
+   var newReceipt = new Objects.CheckObject(PanelFiscalizedCheck);
+   return newReceipt;
+}
+
+//Отримати об'єкт MessBox та порівняти текст, отриманий в параметрі з тестом в заголовку MessBoxWin створенного об'єкта, якщо співпадає - повертаємо об'єкт newObjMessBox
+function GetMessageBoxWinObj(messBoxWin, txtMessBox)
+{
+  var newObjMessBox = new Objects.MessageBox(messBoxWin);
+  
+  if(aqString.Compare(newObjMessBox.Text, txtMessBox, true)==0)
+  {
+    return newObjMessBox;
+  }
+   else
+   {
+    Log.Error("Отриманий в параметрі текст не співпадає з заголовком MessBoxWin: " + messBoxWin.TextBlock_Message.Text.OleValue);
+   }
+}
+
+function GetVersionCashalot()
+{
+  var version;
+  var versionCashalot = new Objects.AboutProgramm();
+  versionCashalot.ClickInfoBtn();
+  versionCashalot.ClickAboutProgram();
+  version = versionCashalot.GetVersion();
+  versionCashalot.CloseAboutProgram();
+  return version;
+}
+
+
+
+
+
+
+
+
+
+

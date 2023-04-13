@@ -1,0 +1,1 @@
+﻿var LOGINFORM = "LOGIN_FORM";

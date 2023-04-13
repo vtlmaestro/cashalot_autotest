@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{54BD767E-85A4-491D-A3B2-EC88685BF3C8}" version="14.0">
+	<children>
+		<child name="Job1" key="{A31E1511-AEBC-403D-B162-B48A9929F7EB}">
+			<data signature="{E2AF080E-4F10-4DAC-8897-101FF5509E65}" version="14.0" caption="Job1" active="True">
+				<children>
+					<child name="CashalotTest" key="{FEB4D4F9-CEC6-4834-8759-1E72273363C2}">
+						<data signature="{23C4D44E-8AC2-4667-BAFD-DAD89D94804E}" version="14.0" caption="CashalotTest" active="True" actionAfterRun="4" remoteApplication="0" copyRemoteLogMode="1" projectPath="" tag="Метод запуска тестов на ВМ" host="{A5EFEC9A-B49E-49BF-AE82-69698DF9A88A}" test="CashLot\Script\TCM194\Run" previousInstanceMode="0" instances="1" hostTimeout="3" />
+					</child>
+				</children>
+			</data>
+		</child>
+	</children>
+</Root>

@@ -1,0 +1,503 @@
+﻿//USEUNIT Objects
+
+function UCConfirmPwd(handle_this)
+{
+  handle_this = (Objects.IsNullOrUndefined(handle_this))?false:handle_this;  
+
+  this.Dialog = true;
+  
+  this.ClassName = Types.UC_CONFIRM_PWD;
+  
+  while(!Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.Exists)
+    aqUtils.Delay(100);
+
+  var wnd = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd;
+    
+  this.EnterPassword = function(password)
+  {
+    wnd.pwdTextControl.set_Password(password);
+  }
+  
+  this.SavePassword = function(bool)
+  {
+    wnd.checkLoginSavePwd
+    bool = (Objects.IsNullOrUndefined(bool))?false:bool;
+    wnd.checkLoginSavePwd.set_IsChecked(bool);
+    
+    return wnd.checkLoginSavePwd.IsChecked;
+  }
+  
+  this.BaseHandler = (handle_this)?function()
+  {
+    this.SavePassword(true);
+    this.EnterPassword(Parameters.USERCERTPASSWORD);
+    return this.Ok();
+  }:undefined;
+  
+  
+  this.Ok = function()
+  {
+    wnd.BtnNext.Click();
+    while(!Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Exists)
+    {
+      if(!wnd.Exists)
+        break;
+      aqUtils.Delay(100);
+    }
+    var DialogResult = new Objects.DialogResult();
+    if(!wnd.Exists)
+    {
+      DialogResult.Message = null;
+      DialogResult.Result = true;
+    }
+    else if(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Exists)
+    {
+      var msgBox = new Objects.MessageBox(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow);
+      DialogResult.Message = msgBox.Text;
+      DialogResult.Result = false;
+      msgBox.Ok();
+    }
+    return DialogResult;
+  }
+  
+  this.Cancel = function()
+  {
+    wnd.Button.Click();
+  }
+  
+  return this;
+}
+
+function LoginForm()
+{
+  
+  //VAR
+  this.Obj = null;
+  this.Exists = false;
+  //Fields
+  this.UserKeyField = null;
+  this.UserNameComboBox = null;
+  this.UserKeyPasswordField = null;
+  //Buttons
+  this.SelectKeyPathButton = null;
+  this.CancelButton = null;
+  this.EnterButton = null;
+  this.CloseAppButton = null;
+  var dialogResult = new DialogResult();
+  var proxySettingBtn;
+  var helpBtn;
+  var linkLabel;
+  var checkLoginSavePwd;
+  
+  
+  while(!Aliases.CashaLot.HwndSource_LoginView.LoginView.Exists)
+    aqUtils.Delay(100);
+    
+  if(Aliases.CashaLot.HwndSource_LoginView.LoginView.Exists)
+  {
+    this.Obj = Aliases.CashaLot.HwndSource_LoginView.LoginView;
+    this.Exists = true;
+    checkLoginSavePwd = Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.checkLoginSavePwd;
+    proxySettingBtn = Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.Button2;
+    helpBtn = Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.Button22;
+    linkLabel = Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.HyperlinkMyCashalotOrgUa;
+    this.EnterButton = Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.btnEnter;
+    this.CancelButton = Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.Button;
+    this.UserKeyField = Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.tabCtrl.edCertPath;
+    this.UserNameComboBox = new ComboBox(Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.tabCtrl.mCmbCerts);
+    this.UserKeyPasswordField = Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.tabCtrl.pwdTextControl;
+  }
+  
+  this.SavePassword = function(bool)
+  {
+    bool = (Objects.IsNullOrUndefined(bool))?false:bool;
+    checkLoginSavePwd.set_IsChecked(bool);
+    
+    return checkLoginSavePwd.IsChecked;
+  }
+  
+  //return UCProxySettings Dialog Window
+  this.ProxySettings = function()
+  {
+    proxySettingBtn.Click();
+    return new UCProxySettings();
+  }
+  
+  this.SetCertPath = function(path)
+  {
+    this.UserKeyField.Click(320, 15);
+    var dlg_ = Aliases.CashaLot.dlg_;
+    dlg_.SHBrowseForFolderShellNameSpaceControl.Item.ClickItem(aqString.Format("|Рабочий стол|Этот компьютер|%s",path));
+    dlg_.btn_.ClickButton();
+  }
+  
+  this.Enter = function()
+  {
+    this.EnterButton.Click();
+    while(!Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Exists)
+    {
+      if(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.lvRROList.Exists)
+        break;
+      aqUtils.Delay(100);
+    }
+    
+    if(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Exists)
+    {
+      var msgBox = new MessageBox(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow);
+      dialogResult.Message = msgBox.Text;
+      dialogResult.Result = false;
+      msgBox.Ok();
+      return dialogResult;
+    }
+    else if(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.lvRROList.Exists)
+    {
+      dialogResult.Result = true;
+      return dialogResult;
+    }
+  }
+  
+  this.SelectUser = function(username)
+  {
+    var needItem = this.UserNameComboBox.GetItemByName(username);
+    this.UserNameComboBox.SelectItem(needItem);
+  }
+  
+  this.EnterPassword = function(password)
+  {
+    this.UserKeyPasswordField.set_Password(password);
+  }
+  
+  return this;
+}
+
+function UCProxySettings(proxy_setting)
+{
+  while(!Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCProxySettings.Exists)
+    aqUtils.Delay(100);
+  
+  //VAR
+  this.CurrentSettings; 
+  this.Exists = true;
+  var windowDlg = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog;
+  var object = windowDlg.UCProxySettings;
+  var rdBtnProxyNo = windowDlg.UCProxySettings.rdBtnProxyNo;
+  var rdBtnProxySystem = windowDlg.UCProxySettings.rdBtnProxySystem;
+  var rdBtnProxyUser = windowDlg.UCProxySettings.rdBtnProxyUser;
+  var edProxyAdrress = windowDlg.UCProxySettings.edProxyAdrress;
+  var edProxyPort = windowDlg.UCProxySettings.edProxyPort;
+  var btnTestConnection = windowDlg.UCProxySettings.btnTestConnection;
+  var btnSaveProxy = windowDlg.UCProxySettings.btnSaveProxy;
+  var btnCancel = windowDlg.UCProxySettings.btnCancel;
+  var btnCloseMainWindow = windowDlg.btnCloseMainWindow;
+  
+  if(!Objects.IsNullOrUndefined(proxy_setting))
+  {
+    this.SetSettingType(proxy_setting.Type);
+    if(rdBtnProxyUser.IsChecked)
+    {
+      this.SetAddress(proxy_setting.Address);
+      this.SetPort(proxy_setting.Port);
+    }
+    this.CurrentSettings = proxy_setting;
+  }
+  else
+  {
+    var currentType;
+    if(rdBtnProxyNo.IsChecked)
+      currentType = 1;
+    else if (rdBtnProxySystem.IsChecked)
+      currentType = 2;
+    else
+      currentType = 3;
+    this.CurrentSettings = new Objects.ProxySetting
+                              ( edProxyAdrress.Text.OleValue,
+                                edProxyPort.Text.OleValue,
+                                currentType );
+  }
+  
+  
+  this.SetAddress = function(addr)
+  {
+    this.SetSettingType();
+    edProxyAdrress.set_Text(addr);
+  }
+  
+  this.SetPort = function(port)
+  {
+    this.SetSettingType();
+    edProxyPort.set_Text(port);
+  }
+  
+  this.SetSettingType = function(int_type)
+  {
+    if(int_type==1)
+      rdBtnProxyNo.set_IsChecked(true);
+    else if(int_type==2)
+      rdBtnProxySystem.set_IsChecked(true);
+    else
+      rdBtnProxyUser.set_IsChecked(true);
+  }
+  
+  this.Cancel = function()
+  {
+    btnCancel.Click();
+  }
+  
+  this.SaveProxi = function(){
+    btnSaveProxy.Click();
+  }
+  
+  //return bool
+  this.TestConnection = function()
+  {
+    btnTestConnection.Click();
+    Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.WaitProperty("Exists", true, 30000);
+    var msg = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow;
+    var testMessage = msg.TextBlock_Message.Text.OleValue;
+    aqUtils.Delay(1000);
+    msg.Close();
+    
+    if(testMessage==CONST.CORRECT_PROXY_CONNECTION)
+    {
+      aqUtils.Delay(1000);
+      return true;
+    }
+    else
+    {
+      Log.Warning(testMessage);
+      return false;
+    }
+  }
+  
+  this.Save = function(withTestConnection)
+  {
+    withTestConnection = (Objects.IsNullOrUndefined(withTestConnection))?false:withTestConnection;
+    
+    if(withTestConnection)
+    {
+      if(this.TestConnection())
+      {
+        btnSaveProxy.Click();
+        Log.Message("Ручные настройки прокси сохраненны")
+      }
+      else
+        Log.Warning("Настройки прокси не сохраненны");  
+    }
+    else
+    {
+      btnSaveProxy.Click();
+      Log.Message("Ручные настройки прокси сохраненны")
+    }
+  }
+  
+  return this;
+}
+
+//Открыть кассу
+function OpenedCashier()
+{
+  while(!Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.Exists)
+    aqUtils.Delay(100);
+  
+  //VAR
+  this.Exists = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.Exists;
+  
+  var leftside = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel;
+
+  var receiptOper = new UCReceiptOperations();
+  
+  var btnNewReceipt = leftside.btnNewReceipt;
+  var btnStallReceipt = leftside.btnStallReceipt;
+  var btnCancelReceipt = leftside.btnCancelReceipt;
+  var btnReturnReceipt = leftside.btnReturnReceipt;
+  var btnNewTransaction = leftside.btnNewTransaction;
+  var btnXReport = leftside.btnXReport;
+  var btnZReport = leftside.btnZReport;
+  var ReceiptGrid = leftside.ReceiptGrid;
+  var txbEnterGoods = leftside.txbEnterGoods;
+  var btnEditGoods = leftside.btnEditGoods;
+  
+  return this;
+}
+
+function UCReceiptOperations()
+{
+  while(!Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptOperationsStart.Exists)
+    aqUtils.Delay(100);
+    
+  this.Exists = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptOperationsStart.Exists;
+  
+  
+  return this;
+}  
+//Открыть новую смену
+function UCOpenNewShift()
+{
+  while(!Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.UCOpenNewShift.Exists)
+    aqUtils.Delay(100);
+  
+  //VAR  
+  var obj = Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.UCOpenNewShift;
+  var enterSumField = Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.UCOpenNewShift.Textbox3;
+  
+  var AcceptBtn;
+  var CancelBtn;
+  
+  var btns = obj.FindAllChildren("ClrClassName", "Button",10).toArray();
+  for(var i=0; i<btns.length; i++)
+  {
+    if(btns[i].Content.OleValue=="Відкрити зміну")
+      AcceptBtn = btns[i];
+    else if(btns[i].Content.OleValue=="Відмінити")
+      CancelBtn = btns[i];
+  }
+  
+  this.ShiftName = Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.UCOpenNewShift.Textbox.Text.OleValue;
+  this.KasirName = Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.UCOpenNewShift.Textbox2.Text.OleValue;
+  
+  this.EnterSum = function(sum)
+  {
+    enterSumField.set_Text(sum);
+  }
+  
+  this.Open = function()
+  {
+    AcceptBtn.Click();
+  }
+  
+  return this;
+}
+
+function EnterUserPassword()
+{
+  var ConfirmPWDWinPwd = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd;
+  var wnd = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd;
+  
+  this.EnterPwd = function(password)
+  {
+    Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.pwdTextControl.WaitProperty("Exists", true, 5000);
+    wnd.pwdTextControl.set_Password(password);
+  }
+  
+  this.OkBtn = function()
+  {
+    wnd.BtnNext.Click();
+    while(!Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Exists)
+    {
+      if(!wnd.Exists)
+        {
+        break;
+        }
+      aqUtils.Delay(100);
+    }
+    var DialogResult = new Objects.DialogResult();
+    if(!wnd.Exists)
+    {
+      DialogResult.Message = null;
+      DialogResult.Result = true;
+    }
+    else if(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Exists)
+    {
+      var msgBox = new Objects.MessageBox(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow);
+      DialogResult.Message = msgBox.Text;
+      DialogResult.Result = false;
+      msgBox.Ok();
+    }
+    return DialogResult;
+  }
+  
+  this.SavePwd = function(bool)
+  {
+    wnd.checkLoginSavePwd
+    bool = (Objects.IsNullOrUndefined(bool))?false:bool;
+    wnd.checkLoginSavePwd.set_IsChecked(bool);
+    
+    return wnd.checkLoginSavePwd.IsChecked;
+  }
+  
+  this.CancelBtn = function()
+  {
+    wnd.Button.Click();
+  }
+}
+
+function InsertPWD()
+{
+  var ReceiptFiscalizedWin = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized;
+  var pwdTextWinSign = Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.pwdTextControl;
+
+  while(!pwdTextWinSign.Exists)
+  {
+    aqUtils.Delay(500);
+    Log.Message("Очикування вікна підпису");
+  }
+  if(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.Grid.WaitWPFObject("Border", "*", 5000).Exists)
+  {
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.pwdTextControl.WaitWPFObject("AdornerLayer", "*", 3000).Exists)
+    {
+     var confirmPwd = new WinHandler.EnterUserPassword();
+     confirmPwd.EnterPwd(USERCERTPASSWORD);
+     confirmPwd.OkBtn();
+    }
+  }
+  else
+    {
+      Log.Error("Не знайдено вікно для вводу пароля");
+    }
+    
+  while(pwdTextWinSign.Exists)
+  {
+    aqUtils.Delay(500);
+    Log.Message("Очикування завершення підпису");
+  } 
+  
+  if(!pwdTextWinSign.Exists)
+  {
+    return true;
+  }
+  else 
+  {
+    return false;
+  }
+}
+
+
+//function InsertPWD_Old()
+//{
+//  var ReceiptFiscalizedWin = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized;
+//  if(Aliases.CashaLot.WaitWPFObject("HwndSource: WindowDialog", "*", 5000).Exists)
+//  {
+//  if(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.Grid.WaitWPFObject("Border", "*", 5000).Exists)
+//  {
+//  var confirmPwd = new WinHandler.EnterUserPassword();
+//  confirmPwd.EnterPwd(USERCERTPASSWORD);
+//  confirmPwd.OkBtn();
+//  if(ReceiptFiscalizedWin.Exists && aqString.Compare(ReceiptFiscalizedWin.DataContext.ReceiptVM.StatusName.OleValue, REGISTERED, true) == 0)
+//  {
+//   aqUtils.Delay(3000);
+//   return true;
+//  }
+//   else
+//    {
+//     return false;
+//    }
+//    }
+//    else
+//    {
+//      Log.Error("Не знайдено вікно для вводу пароля");
+//    }
+//  }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+

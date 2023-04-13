@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
+				<Prp name="activity" type="S" value="{E0D25280-11B2-465D-B325-8DED3B7F3A25}"/>
+			</Node>
+			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
+			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
+				<Node name="workspace">
+					<Node name="0">
+						<Node name="editor">
+							<Node name="{8c45957c-f4b3-4dd7-9212-49cbd350f69f}">
+								<Prp name="key" type="S" value="{2427CFDB-2E6E-4B27-BE17-04B5F3CCB6A8}"/>
+							</Node>
+							<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}">
+								<Prp name="col" type="I" value="62"/>
+								<Prp name="key" type="S" value="{018C72D6-1DDD-4116-96A6-6ECD38B70B51}"/>
+								<Prp name="line" type="I" value="266"/>
+								<Prp name="sellength" type="I" value="0"/>
+								<Prp name="selstart" type="I" value="9777"/>
+								<Prp name="windowchar" type="I" value="0"/>
+								<Prp name="windowline" type="I" value="0"/>
+							</Node>
+							<Prp name="editor" type="S" value="{F794DD00-CCCA-4229-AD0B-4B69566E0D53}"/>
+							<Prp name="focused" type="S" value="{018C72D6-1DDD-4116-96A6-6ECD38B70B51}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{E0D25280-11B2-465D-B325-8DED3B7F3A25}"/>
+					</Node>
+					<Node name="1">
+						<Node name="editor">
+							<Node name="{8c45957c-f4b3-4dd7-9212-49cbd350f69f}">
+								<Prp name="key" type="S" value="{CA7E7A66-5A7A-4863-8199-20737199C1D9}"/>
+							</Node>
+							<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}">
+								<Prp name="col" type="I" value="31"/>
+								<Prp name="key" type="S" value="{D8F33234-A6BE-4E3C-AE91-414C69651BB0}"/>
+								<Prp name="line" type="I" value="178"/>
+								<Prp name="sellength" type="I" value="0"/>
+								<Prp name="selstart" type="I" value="6606"/>
+								<Prp name="windowchar" type="I" value="0"/>
+								<Prp name="windowline" type="I" value="160"/>
+							</Node>
+							<Prp name="editor" type="S" value="{6B30D1BD-9B80-46C4-8311-0EF3D35606A6}"/>
+							<Prp name="focused" type="S" value="{D8F33234-A6BE-4E3C-AE91-414C69651BB0}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{814B42E1-F799-468C-83C9-E0F1D170A732}"/>
+					</Node>
+					<Node name="10">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{5C758F91-9C2C-4687-A5E0-BF99C19A5F2A}"/>
+							<Prp name="focused" type="S" value="{12EBC37B-9742-4656-9E72-643D12A4BB04}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{141CCF9E-E5F3-4150-B55D-502E65DBFFA3}"/>
+					</Node>
+					<Node name="11">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{269BB167-16C2-46B3-8679-1DA13303B513}"/>
+							<Prp name="focused" type="S" value="{77A65ADB-A39C-4A9A-BF45-A2A30AAD9138}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{E336EF45-F661-45C0-B2AE-86A4E9F31993}"/>
+					</Node>
+					<Node name="12">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{FA28B992-B59C-4E72-9D8C-C26F2DB216F0}"/>
+							<Prp name="focused" type="S" value="{FAB6BB19-654E-410D-8A9D-6B4C5A3805BC}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{CB76D862-C3AC-4F74-A0D2-5C88D1CDEA72}"/>
+					</Node>
+					<Node name="13">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{2FBEF92D-071F-4728-99AC-230829106B45}"/>
+							<Prp name="focused" type="S" value="{05743070-32A1-43AB-9C0C-89E31972F0B0}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{33FA8F4E-B5CD-4D25-8096-312950D2BE9C}"/>
+					</Node>
+					<Node name="14">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{B0096912-F71D-4139-AD9A-0F4C0118DEF8}"/>
+							<Prp name="focused" type="S" value="{F6D7D650-2034-4483-9900-4F5F7B9EB280}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{0C17D1EF-69DC-4A76-BE3A-1D9838ACD1B4}"/>
+					</Node>
+					<Node name="15">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{9F9B5337-FAC9-45ED-8531-8FA8AE26BA60}"/>
+							<Prp name="focused" type="S" value="{3B052278-9F1A-45A1-99BD-89DDD29C7E42}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{315E5948-D89E-495C-AB44-F31F8EBDEBBC}"/>
+					</Node>
+					<Node name="16">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{EAEA0631-1FD5-41D4-9904-B3B5BF4EF55A}"/>
+							<Prp name="focused" type="S" value="{B141A3FE-80B2-4A7A-AEA0-EEBCAE6BE825}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{2C71D6FD-9C47-438D-B39E-D0D075392F42}"/>
+					</Node>
+					<Node name="17">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{D2100C23-26F4-4CA6-A2E5-03395A5F556F}"/>
+							<Prp name="focused" type="S" value="{FBB4DB6C-E929-4671-8179-19FDC135ABF3}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{A01E7178-FDF3-447F-BBE2-A41ADDA5DBB0}"/>
+					</Node>
+					<Node name="18">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{F81E34BD-D624-496F-81D8-056CE12D2A0A}"/>
+							<Prp name="focused" type="S" value="{D870E72A-685D-4CBE-BB04-D5EFD3127856}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{DFEE809C-B91F-4578-9B9F-9D348F19F788}"/>
+					</Node>
+					<Node name="19">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{DFAD47E1-A2A6-4C99-BEAA-5ABA3A7A202C}"/>
+							<Prp name="focused" type="S" value="{D3A5FF8D-16CE-4753-AB35-80F65525C8A4}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{008C44DC-1A5B-440C-BB96-A59EC802B4C3}"/>
+					</Node>
+					<Node name="2">
+						<Node name="editor">
+							<Node name="{8c45957c-f4b3-4dd7-9212-49cbd350f69f}">
+								<Prp name="key" type="S" value="{850F27BC-F509-4981-9A26-917C5BD0D0EC}"/>
+							</Node>
+							<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}">
+								<Prp name="col" type="I" value="13"/>
+								<Prp name="key" type="S" value="{B2E8B76F-A2DA-4D7E-A181-C62A561F403D}"/>
+								<Prp name="line" type="I" value="22"/>
+								<Prp name="sellength" type="I" value="60"/>
+								<Prp name="selstart" type="I" value="540"/>
+								<Prp name="windowchar" type="I" value="0"/>
+								<Prp name="windowline" type="I" value="18"/>
+							</Node>
+							<Prp name="editor" type="S" value="{36DF5F93-6362-4C92-9D5A-9FCBC12F2491}"/>
+							<Prp name="focused" type="S" value="{B2E8B76F-A2DA-4D7E-A181-C62A561F403D}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{025CBE07-A86D-4047-80E2-1D1C29FCE01B}"/>
+					</Node>
+					<Node name="3">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{500001D5-2D07-4564-B879-495CB9F84DA9}"/>
+							<Prp name="focused" type="S" value="{F8B9AF4B-67B7-4421-8D4C-99B631BA0FEC}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{B33DBCDA-CB5E-48AC-B3A2-3FEE1AC498A9}"/>
+					</Node>
+					<Node name="4">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{51744E03-6F12-4875-8C76-98B06DCC81F4}"/>
+							<Prp name="focused" type="S" value="{34BEE0F9-4720-4A28-B699-6D46D45FEDA8}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{869D9523-1750-4293-95D7-8BB174BC9624}"/>
+					</Node>
+					<Node name="5">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{DCD5E8DE-8DAD-4F5F-BBB6-2F9169A67A05}"/>
+							<Prp name="focused" type="S" value="{F6F811FF-0B74-4C46-9B93-3BE78D901620}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{BB1336A2-0BAF-47EA-A912-75D8A346C916}"/>
+					</Node>
+					<Node name="6">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{79A037A2-5BAB-4048-9204-5B1D543BED0F}"/>
+							<Prp name="focused" type="S" value="{1F72545D-DA2E-4704-BFF4-39F6DCB3FDA3}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{3D8F0F62-3E89-4686-880A-5C34B9635DFE}"/>
+					</Node>
+					<Node name="7">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{F7E22D8F-E065-4F25-9D88-28128B97F496}"/>
+							<Prp name="focused" type="S" value="{BA35362F-CD4C-4F1A-9FFA-53CE22784F79}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{A026DB05-CC9C-47BD-BEB1-20257B81CCC1}"/>
+					</Node>
+					<Node name="8">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{A42601B3-3129-4032-9F28-15E4F8B97001}"/>
+							<Prp name="focused" type="S" value="{217BC088-5921-44C6-A65B-5A99A622748C}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{EA5B00A8-5432-4725-9166-F09109AEFD07}"/>
+					</Node>
+					<Node name="9">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{C428795F-3B6E-420B-9C36-8EBB8103692B}"/>
+							<Prp name="focused" type="S" value="{A31EB499-E53E-4BAC-9F05-B2031032B502}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{40F1CDD6-33BB-4212-B648-CD5FDDD9445D}"/>
+					</Node>
+					<Prp name="docking" type="H" value="617162696E00000001000000A10F00007801BD976D508C5114C7CFCE664BA184C6CB24469A2D562A53832FB66C9B697B31BD306566A35656DB6EB6B6B17C11E36DBC34C56055B38425AC41B3464253FA10658C97F02179198C310C46A6F8C2394FCF3323DCF4E9DE99E765EF7DEEF3FCCE39FF7BCE5DF5F2A56909C97E20B620BC6E5400D8E452CF70D795FE83A33DC96F3F69B77F4938B1FBC923DB87E0D1B2101CA037145F7F3DB36B7666FCD68E45F3F678D6F7CA6500DBB07FB337C0ABBF3FE135DCC768ECA7D8DAF03D1DFFF83DECFC3C1A9D88879B6EB035CAC24E8647452F712A27BD1E682A9129F0AD4EEC2F47BADEDFE97CB133012C500C25783683018F3228C55E0EC4F895663CA875CB20DD5B55A0B96A5FB6AA6920A581093C1E1FD682158C50002B10D90A459086F0049E01EBB07F2D1AC00BFF1EB16393A7962D0FB4D892F6961FB958DC55D1C7C49F860F6B055803A2AF0613421B10B80CC1CD50889E8F071B9EE99701AFA5908577468E26B50A06A14CDE75F7B8F7E9D39AAF4456195D9B46314D22DDA560240A10DCF41FE378C5E5AE68447DDC31FBB9DCA425D55EB9C1998B3FFA338D98FADFB8A463BC2CB011EC42C4AC508EF1B1E22C3EEBA45334A852F5AADFF062765ADD2E65E09EC37D8798064DC1096A8C4981201EA3B0B8496E1AD8807132E28A2916645886E6E40B4224B9F132E79468CE01FDF3D835F9D5BABA1C67676B646815D31C4CDC9089992A05A22106E2B883DEB83FBF684B4D7BE2B6F1E3BE3ECC56B846081AC30DF4B4E8517876B0FF4E5778BCDB2FD9986D1E9BC104C54A00491878334AC4C455CB5291527DBF1919E2ADD43ACECFF2090F28D23051A948A951B12542A9A202454BD1C4CDB70DA26FAB9B943F6A3DD6D4BABD6D16D5E5A0CF4C601F9C9080BE2DC582448BCEC2317F4B15B5F0524D585B5063E20E7BF0F118B9670213962AEA9FB07AF4B70DA1099CF202BF8AEA117D5D55695B35B77667E2A9172D8ED6A3FA0826FE38019FF62E6B31AD152236D555AAA7D4C72FA55D12C1F57665BB79B15F7C6DECFEE60AB9710E137C0C4ED0086584144D9B30FECA96F2705C468DF3F68F8F9AED5195672E845DCB63420FCDC30BD0043EF5EF96E8DD40E3E88BC1FD0BD5EEA3FE3AD9E4DE0126E8249C3098334C2805AA709224D2F19E2442F58FD46DE5281249DD518AF7EFBB431EA91D5E8D9E96D46F394C3348DDD276578DA0B4ED35A058D6E1391FB7BEBCFC2FA5C01B0BA60F843EB62CAB783ACAF45215E1CB041F9A02755C53A0A4EA5963021EF485B974F56FE40B73F4591626EC5055C772F3AAB44D7DA9753F77D53B7437CFE65C5BB469C65C26286D5347B6ABA3ED2AFD891854382F9950D447DC7E014A8AE6D0"/>
+					<Prp name="editorscount" type="I" value="20"/>
+					<Prp name="enabled" type="B" value="-1"/>
+				</Node>
+			</Node>
+			<Node name="{78a745b3-10ae-4253-9f16-55a8bcaf43c6}">
+				<Prp name="history" type="S" value="BtnSaveMailSettings&#xA;portScalesCmb.set_Text(&quot;COM5&quot;);&#xA;portScalesCmb.set_Text(&quot;111111&quot;);&#xA;Aliases.CashaLot.HwndSource_PopupRoot3.PopupRoot.NonLogicalAdornerDecorator&#xA;NameMapping.Sys.CashaLot.HwndSource_mainWindow.mainWindow_.Grid.Border2.Grid.WPFObject(&quot;ComboBox&quot;, &quot;&quot;, 5).Items.get_Item(i)&#xA;NameMapping.Sys.CashaLot.HwndSource_mainWindow.mainWindow_.Grid.Border2.Grid.WPFObject(&quot;ComboBox&quot;, &quot;&quot;, 5)&#xA;this.TypePayCmb.Items.get_Item(1).OleValue&#xA;this.TypePayCmb.Items.get_Item(0).OleValue&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.pwdTextControl&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.pwdTextControl.WaitProperty(&quot;Exists&quot;, true, 30000)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.pwdTextControl.WaitWPFObject(&quot;AdornerLayer&quot;, &quot;*&quot;, 5000)&#xA;Aliases.CashaLot.HwndSource_PopupRoot3.PopupRoot.NonLogicalAdornerDecorator.WPFObject(&quot;ComboBoxItem&quot;, &quot;&quot;, 2).WPFObject(&quot;TextBlock&quot;, &quot;ПриватБанк (USB)&quot;, 1).Text&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.SelectNext()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.SelectLast()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.SelectFirst()&#xA;TypeConfigCmb.Items.get_Item(i)&#xA;Aliases.CashaLot.HwndSource_PopupRoot3.PopupRoot.NonLogicalAdornerDecorator.WPFObject(&quot;ComboBoxItem&quot;, &quot;&quot;, 4)&#xA;TypeConfigCmb.Items.get_Item(i).set_Name(&quot;ПриватБанк(USB)&quot;)&#xA;PrintListView.Items.get_Item(1).RefreshEntireViewModel()&#xA;PrintListView.Items.get_Item(i).RefreshEntireViewModel()&#xA;PrintListView.Items.get_Item(i)&#xA;PrintListView.Items.get_Item(i).update()&#xA;PrintListView.Items.get_Item(1).IsCurrentPrinterDefault&#xA;PrintListView.Items.get_Item(i).IsCurrentPrinterDefault&#xA;PrintListView.Items.get_Item(i).IsCurrentPrinterDefault.Refresh&#xA;PrintListView.Items.get_Item(i).IsCurrentPrinterDefault.Refresh()&#xA;PrintListView.Items.get_Item(i).IsCurrentPrinterDefault.Update()&#xA;PrintListView.Items.get_Item(i).&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.WPFObject(&quot;ListViewItem&quot;, &quot;&quot;, 3).set_IsSelected(true)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.WPFObject(&quot;ListViewItem&quot;, &quot;&quot;, 1).set_IsSelected(true)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.WPFObject(&quot;ListViewItem&quot;, &quot;&quot;, 3).set_IsSelected(rue)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.WPFObject(&quot;ListViewItem&quot;, &quot;&quot;, 3).set_IsSelected()&#xA;Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;HwndSource: mainWindow&quot;).WPFObject(&quot;mainWindow&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;CashiersArea&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;borderWithContent&quot;).WPFObject(&quot;UCDeviceSettingsMainWindow&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;borderWithContent&quot;).WPFObject(&quot;UCPrinterSettings&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;lvPrintList&quot;).Items.get_Item(0)&#xA;PrintListView.Items.get_Item(0).set_IsCurrentPrinterDefault(false)&#xA;PrintListView.Items.get_Item(0).set_IsCurrentPrinterDefault(true)&#xA;PrintListView.Items.get_Item(0)&#xA;PrintListView.Items.get_Item(3)&#xA;PrintListView.Items.get_Item(2)&#xA;PrintListView.Items.get_Item(1)&#xA;PrintListView&#xA;PrintListView.update()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.Items.Count&#xA;PrintListView.Items.get_Items()&#xA;PrintListView.Items.get_Item(1).Tag.OleValue&#xA;listViewAdditionalEquipment.Items.get_Item(2)&#xA;listViewAdditionalEquipment.Items.get_Item(0)&#xA;listViewAdditionalEquipment.Items.get_Item(1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.Items.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.set_SelectedItem(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.Items.get_Item(0))&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border3.ListView.set_SelectedItem()&#xA;ListView.set_SelectedItem()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.lvRROList.Items.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.lvRROList.Items.get_Item(1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.lvRROList.Items.get_Item()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.lvRROList&#xA;MailPassTextBox.set_Password(&quot;545454&quot;)&#xA;MailPassTextBox&#xA;MailPassTextBox.Clear()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.lvRROList.Grid.MailSettings.Textbox.Clear()&#xA;MailAddressTextBox&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.lvRROList.Grid.MailSettings.Button.get_IsEnabled()&#xA;checkProxySettings.TestProxyConnection()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border2.Groupbox&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border2.Groupbox.rdBtnProxyNo&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border2.Groupbox.edProxyPort.Clear()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border2.Groupbox.edProxyAdrress.Clear()&#xA;Objects.Compare(currentSettings, checkProxySettings.getCurrentSettings)&#xA;currentSettings.Compare(checkProxySettings.getCurrentSettings)&#xA;ModulGeneralSettings.CheckProxyServerSettings()&#xA;ModulGeneralSettings&#xA;CheckProxyServerSettings()&#xA;listViewGeneralSettings.Items.get_Item(i)&#xA;this.Items.GetValue(5)&#xA;this.Items&#xA;this.Items.GetValue(6).MenuName&#xA;aqString.ToUpper(this.Items.GetValue(j).MenuName)&#xA;menuitem.SubMenuItems.GetValue(0).MenuName&#xA;this.Items.GetValue(5).MenuName&#xA;this.Items.GetValue(j).MenuName&#xA;textWindowDialogResultImp&#xA;progressText&#xA;Aliases.CashaLot.HwndSource_WindowDialog20.WindowDialog.progress2_text.Exists&#xA;aqString.Find(textWindowDialogResultImp.Text.OleValue, RESIMPORT,  0, true)&#xA;aqString.Find(textWindowDialogResultImp.Text.OleValue, RESIMPORT,  2, true)&#xA;aqString.Find(textWindowDialogResultImp.Text.OleValue, RESIMPORT,  true)&#xA;textWindowDialogResultImp.Text.OleValue&#xA;aqString.Find(textWindowDialogResultImp.Text.OleValue, RESIMPORT, 0, true)&#xA;progress.BreadcrumbParent.toolbar_&#xA;progress.BreadcrumbParent.toolbar_.ClickItem(&quot;[Enter]&quot;)&#xA;progress.BreadcrumbParent.toolbar_.HoverMouse()&#xA;progress.BreadcrumbParent.toolbar_.ClickItem()&#xA;progress.BreadcrumbParent.toolbar_.&#xA;Aliases.CashaLot.dlg_2.WorkerW.ReBarWindow32.AddressBandRoot.progress.Click()&#xA;Aliases.CashaLot.dlg_2.WorkerW.ReBarWindow32.AddressBandRoot.progress.SetFocus()&#xA;Aliases.CashaLot.dlg_2.WorkerW.ReBarWindow32.AddressBandRoot.progress.Refresh()&#xA;GoodsGrid.Items.get_Item(3).VendorCode.OleValue&#xA;GoodsGrid.Items.get_Item(2).VendorCode.OleValue&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.ScrollViewer.Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.btnEditGoods.Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.GoodsGrid&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.GoodsGrid.Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.ScrollViewer.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Tabs&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized.ContentPresenter.WaitWPFObject(&quot;StackPanel&quot;, &quot;*&quot;, 3000)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized.ContentPresenter.WaitWinFormsObject(&quot;StackPanel&quot;, &quot;*&quot;, 3000)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized.ContentPresenter.Name.WaitWinFormsObject(&quot;StackPanel&quot;, &quot;*&quot;, 3000)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized.ContentPresenter.Name.WaitWPFObject(&quot;StackPanel&quot;, &quot;*&quot;, 3000)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized.ContentPresenter.Name.WaitWPFObject(&quot;StackPanel&quot;, &quot;*&quot;, 3000).Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized.receiptGrid.WaitWPFObject(&quot;Header&quot;, &quot;*&quot;, 3000).Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized.btnSendEmail.Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized.Textblock.VisibleOnScreen&#xA;ReceiptFiscalized.VisibleOnScreen&#xA;ReceiptFiscalized.VisibleOnScreen()&#xA;ReceiptFiscalized.UpdateContent()&#xA;ReceiptFiscalized&#xA;ReceiptFiscalized.Textblock.Text.OleValue&#xA;ReceiptFiscalized.Refresh()&#xA;ReceiptFiscalized.update()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.Keys(&quot;[Tab]&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.Enter()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Label&quot;, &quot;Одиниця виміру&quot;, 6).set_Name(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Label&quot;, &quot;Одиниця виміру&quot;, 6).FindName(&quot;0301&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Label&quot;, &quot;Одиниця виміру&quot;, 6).FindName(&quot;Кілограм&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Label&quot;, &quot;Одиниця виміру&quot;, 6).FindName(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Label&quot;, &quot;Одиниця виміру&quot;, 6).AddText(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DragR()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.SetValue(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_TabIndex(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_TabIndex(1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_Name(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.Keys(&quot;[Enter]&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.Click()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.UnitInfo.set_ShortName(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_UnitInfo(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_UnitInfo()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_UnitTypeID0()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_UnitTypeID()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_TypeID()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_SpecialType()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_GoodsRates()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_ExciseStamp()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_DKPPInfo()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.set_TypeID(117)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.set_txtPostach(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.HandleOkAction()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.get_VATTax()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.get_Taxes()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.get_SaveGoodsCommand()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.ContextMenu.Items.get_Item(1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_ToolTip(Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.get_ToolTip())&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_ToolTip(Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.get_ToolTip(Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.get_ToolTip())&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_ToolTip()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_Name(&quot;0301&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_Name(&quot;Кілограм&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.SelectAll()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.Select(0, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.GetValue(5)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.GetValue(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.GetValue(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.GetValue(&quot;Кілограм&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.GetValue()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.get_TreeLevel()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.get_ToolTip()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.get_ToolTip(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.get_Name()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.get_Name(&quot;Кілограм&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.FindName(&quot;0301&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.FindName(&quot;кг&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.FindName(&quot;Кілограм&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog16.WindowDialog.DataGrid.get_Items()&#xA;Aliases.CashaLot.HwndSource_WindowDialog16.WindowDialog.DataGrid&#xA;Aliases.CashaLot.HwndSource_WindowDialog16.WindowDialog.DataGrid.Items&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.get_UnitTypeID(117)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.UnitInfo.set_ID(117)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.set_ID(117)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.set_UnitInfo(&quot;Кілограм&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.UnitInfo.set_ID(&quot;117&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.set_UnitTypeID()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.set_UnitTypeID(&quot;117&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.set_UnitTypeID(117)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.ToolTip.GetTypeCode()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.UnitInfo.set_Num(&quot;0301&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.UnitInfo&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.UnitInfo.set_ID(&quot;0301&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.UnitInfo.set_ID(0301)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_ToolTip(tool)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_ToolTip(new Objects.ToolTip)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_ToolTip(Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.ToolTip)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_Text(&quot;Кілограм&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_Text(&quot;0301&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.set_Text(&quot;01.11.11&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.set_DKPPTypeID(01.11.11)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUnitType.DataContext.Good.set_DKPPTypeID(&quot;01.11.11&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;cmbUnitType&quot;).DataContext.set_txtPostach(&quot;77777777777&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUKDZED.DataContext.set_UktzGoodsCode(&quot;4810&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbUKDZED&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;cmbGoodsType&quot;).set_SelectedItem(Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;cmbGoodsType&quot;).Items.get_Item(0))&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCEditGoods&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;cmbGoodsType&quot;).Items.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbGoodsGroup.Items.get_Item(0).Name.OleValue&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbGoodsGroup.Items.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbGoodsGroup.set_SelectedItem(Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbGoodsGroup.Items.get_Item(0))&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbGoodsGroup.set_SelectedItem()&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbGoodsGroup.DataContext&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbGoodsGroup.Items&#xA;cmbGoodsGrp.Item&#xA;Aliases.CashaLot.HwndSource_WindowDialog14.WindowDialog.Border.cmbGoodsGroup.DataContext.Good.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.pwdTextControl.Exists&#xA;windowDialogSign.Update().Exists&#xA;windowDialogSign.Update()&#xA;windowDialogSign.Visable.Exists&#xA;windowDialogSign.Visable&#xA;!windowDialogSign.Exists &amp;&amp; !DocumentOfficialPaymentForPrint.Exists&#xA;windowDialogSign.Exists || DocumentOfficialPaymentForPrint.Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.Grid.DialogPresenter.UCReportSoldGoods.DataContext.Document.DocumentVM.get_Status()&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.Grid.DialogPresenter.UCReportSoldGoods.DataContext.Document.DocumentVM&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.Grid.DialogPresenter.UCReportSoldGoods.DataContext.Document.DocumentVM.get_Sum()&#xA;i&#xA;TestStatusValue.GetValue(3)&#xA;TestStatusValue.GetValue(2)&#xA;TestStatusValue.GetValue(1)&#xA;TestStatusValue.GetValue(0)&#xA;Aliases.CashaLot.WaitWPFObject(&quot;HwndSource: mainWindow&quot;, 4000).Exists&#xA;Aliases.CashaLot.WPFObject(&quot;HwndSource: mainWindow&quot;, 4000).Exists&#xA;Aliases.CashaLot.WPFObject(&quot;HwndSource: mainWindow&quot;, &quot;&quot;, 4000).Exists&#xA;Aliases.CashaLot.WPFObject(&quot;HwndSource: mainWindow&quot;, &quot;*&quot;, 4000).Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.WaitWPFObject(&quot;AdornerLayer&quot;, &quot;*&quot;, 1000)&#xA;NameMapping.Sys.CashaLot.HwndSource_mainWindow.mainWindow_.WaitWPFObject(&quot;Pages&quot;, &quot;*&quot;, 4000)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.WaitWPFObject(&quot;CreateDocument&quot;, &quot;*&quot;, 3).Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.SimpleSearch&#xA;GridOperationsHistoryDockPanel.Items.get_Item(GridOperationsHistoryDockPanel.Items.Count-1)&#xA;GridOperationsHistoryDockPanel.Items.get_Item(GridOperationsHistoryDockPanel.Items.Count)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.Count - 1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.Count)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.Count&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataItemsCount&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.get_Item(2)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.get_Item(15)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.get_Item(7)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.get_Item(10)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.get_Item(3)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Columns.GetFieldInfo()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Items()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.WPFObject(&quot;DataGridRow&quot;, &quot;&quot;, 1).WPFObject(&quot;DataGridCell&quot;, &quot;&quot;, 11).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;&quot;, 1).Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.WPFObject(&quot;DataGridRow&quot;, &quot;&quot;, 1).WPFObject(&quot;DataGridCell&quot;, &quot;&quot;, 11).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;ItemsControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(4)&#xA;this.InsertFN(&quot;545454&quot;);&#xA;Aliases.CashaLot.HwndSource_WindowDialog10.WaitWPFObject(&quot;WindowDialog&quot;, &quot;Акт про видачу коштів при поверненні товару&quot;, 3).Exists&#xA;aqString.Find(ScrollViewerWPFControlText, &quot;Перевірка пройшла успішно&quot;, 0, true)&#xA;aqString.Compare(ScrollViewerWPFControlText, CHECKSUCCESS, false)==0&#xA;new gridOpenShift.Refund()&#xA;gridOpenShift.Refund()&#xA;new WorkOpenShiftGrid().Refund()&#xA;gridOpenShift&#xA;gridOpenShift = new gridOpenShift.Refund()&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject(&quot;WindowDialog&quot;, &quot;*&quot;, 3)&#xA;DialogPresenter.WaitWPFObject(&quot;WindowDialog&quot;, &quot;*&quot;, 3)&#xA;DialogPresenter.WaitWPFObject(&quot;DialogPresenter&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WaitWPFObject(&quot;DialogPresenter&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject(&quot;AdornerLayer&quot;, &quot;*&quot;, 3).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WaitWPFObject(&quot;AdornerLayer&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.WaitWPFObject(&quot;Grid&quot;, &quot;*&quot;, 3).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.WaitWPFObject(&quot;Grid&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.WaitWPFObject(&quot;Border&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.WaitWPFObject(&quot;Border&quot;, &quot;&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.WaitWPFObject(&quot;Border&quot;, &quot;Cashalot&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.Border.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_CustomMessageBoxWindow3.WaitWPFObject(&quot;CustomMessageBoxWindow&quot;, &quot;Z-звіт (закриття зміни)&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WaitWPFObject(&quot;Border&quot;,&quot;*&quot;, 3).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WaitWPFObject(&quot;Border&quot;,&quot;*&quot;, 1).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WaitWPFObject(&quot;Border&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WaitWPFObject(&quot;Grid&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WaitWPFObject(&quot;HwndSource: WindowDialog&quot;,&quot;*&quot;, 1)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;Border&quot;,&quot;*&quot;, 1)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;Grid&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject(&quot;WPFObject(\&quot;HwndSource: WindowDialog\&quot;, \&quot;\&quot;)&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WaitWPFObject(&quot;WPFObject(\&quot;HwndSource: WindowDialog\&quot;, \&quot;\&quot;)&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WaitWinFormsObject(&quot;WPFObject(\&quot;HwndSource: WindowDialog\&quot;, \&quot;\&quot;)&quot;,&quot;*&quot;, 1)&#xA;ConfirmPWDWin.WaitWinFormsObject(&quot;WPFObject(\&quot;HwndSource: WindowDialog\&quot;, \&quot;\&quot;)&quot;,&quot;*&quot;, 1)&#xA;ConfirmPWDWin.WaitWinFormsObject(&quot;WPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;&quot;)&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWPFObject(&quot;HwndSource: WindowDialog&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject(&quot;Border&quot;, &quot;&quot;, 1).&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;,&quot;*&quot;, 1)&#xA;ConfirmPWDWin.WaitWinFormsObject(&quot;HwndSource: WindowDialog&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;,&quot;*&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;,&quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;,23, 3)&#xA;Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 23, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 23, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 9, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 8, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 7, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 6, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 5, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 4, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 3, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 2, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 1, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;*&quot;, 3)&#xA;ConfirmPWDWin.WaitWinFormsObject(&quot;UCConfirmPwd&quot;, 3)&#xA;ConfirmPWDWin.WaitWPFObject(&quot;UCConfirmPwd&quot;, 3)&#xA;ConfirmPWDWin&#xA;WinHandler.EnterUserPassword().EnterPwd(USERCERTPASSWORD)&#xA;VM.ReceiptGrid.DataContext.ReceiptVM&#xA;VM&#xA;VM.ReceiptGrid.DataContext.ReceiptVM.Model&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.DataContext.ReceiptVM.Model&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.DataContext.ReceiptVM.Model.get_ParentReceiptID()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.DataContext.ReceiptVM&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.DataContext.ReceiptVM.get_UserName()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.DataContext&#xA;this.PrroUCPostponedReceiptsCmb.Items.get_Item(i).Name.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(4).LocalNumber&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.DataContext.ReceiptVM.LocalNumber&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(2)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(3)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.Compare(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(3)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.Compare(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(3).OrderDate.Date.OleValue, dotNET.System.DateTime.Now().ToShortDateString().OleValue)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.Items.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.Items.get_Item(0).get_Name()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.Items.get_Item(0).get_UnitCode()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.Items.get_Item(0).get_UnitName()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(1).GetHashCode()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).GetHashCode()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.Items.get_Item(0).GetHashCode()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.Items.get_Item(0).Unit.get_ID()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid.Items&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.Compare(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.OleValue, dotNET.System.DateTime.Now().ToShortDateString().OleValue)&#xA;dotNET.System.DateTime.Now().ToShortDateString().OleValue&#xA;dotNET.System.DateTime.Now().ToShortDateString()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.Compare(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.OleValue, dotNET.System.DateTime.Now())&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.Compare(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.OleValue, dotNET.System.DateTime.Now().ToShortDateString())&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.Compare(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.OleValue, UtilsCashalot.GetCurrentDate(&quot;dd.mm.yyyy&quot;))&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date.Compare()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(0).OrderDate.Date&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(1).OrderDate.Date.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Items.get_Item(1).OrderDate&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.SelectedCells&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.SelectedCells.get_Item(0).get_Column()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.SelectedCells.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.Items.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.get_Item(0).GetType()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.DataContext.GridController.Columns.get_Item(0).Model.GetType()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Columns.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Columns.get_Item(0).get_Value()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Columns.get_Item(0).GetValue()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid.Columns&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.txbEnterGoods.Click()&#xA;SearchProduct.Enter()&#xA;SearchProduct.Click()&#xA;SearchProduct.SelectFirst()&#xA;SearchProduct&#xA;SearchProduct.SelectedItemUpdated()&#xA;SearchProduct.SelectAllImpl()&#xA;SearchProduct.get_Items().set_Item(0, &quot;8787 &quot;)&#xA;SearchProduct.get_Items()&#xA;SearchProduct.get_CtxMenu()&#xA;this.SearchProduct&#xA;this.SearchProduct.AddText(&quot;8787&quot;)&#xA;this.SearchProduct.set_Text(nameproduct)&#xA;this.SearchProduct.SelectNext()&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;WindowDialog&quot;, &quot;Відкриття зміни&quot;, 1, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;WindowDialog&quot;, &quot;Відкриття зміни&quot;, 1), 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(WPFObject(&quot;WindowDialog&quot;, &quot;Відкриття зміни&quot;, 1), 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource: WindowDialog&quot;, &quot;Відкриття зміни&quot;, 1, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource: WindowDialog&quot;, &quot;Відкриття зміни&quot;, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 10, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 9, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 8, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 7, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 6, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 5, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 4, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 3, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 2, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 1, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;, 0, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource&quot;, &quot;Відкриття зміни&quot;,1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HWindowDialog&quot;, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HWindowDialog&quot;, &quot;Відкриття зміни&quot;, 0,  1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HWindowDialog&quot;, &quot;Відкриття зміни&quot;, 2,  1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HWindowDialog&quot;, &quot;Відкриття зміни&quot;, 1,  1000).Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog2.WindowDialog.Border.WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WaitWinFormsObject(&quot;HwndSource: WindowDialog&quot;, &quot;Відкриття зміни&quot;, 1,  1000).Exists&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;HwndSource: WindowDialog&quot;, &quot;Відкриття зміни&quot;, 1,  1000).Exists&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;UCOpenNewShift&quot;, &quot;?*&quot;, 0, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;UCOpenNewShift&quot;, &quot;*?&quot;, 0, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;UCOpenNewShift&quot;, &quot;*&quot;, 0, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;UCOpenNewShift&quot;, &quot;*&quot;, 1, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;*&quot;, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;Grid&quot;, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;UCOpenNewShift&quot;, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(&quot;DialogPresenter&quot;, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(&quot;DialogPresenter&quot;, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(&quot;UCOpenNewShift&quot;, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(WPFObject(&quot;ConfirmPWDWindow.UCOpenNewShift&quot;, &quot;&quot;, 1), 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(WPFObject(&quot;UCOpenNewShift&quot;, &quot;&quot;, 1), 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(WPFObject(&quot;DialogPresenter&quot;), 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(DialogPresenter, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(UCConfirmPwd, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(UCConfirmPwd*, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(*UCConfirmPwd*, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(ConfirmPWDWindow, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(\\*ConfirmPWDWindow\\*, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(\*ConfirmPWDWindow\*, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(*ConfirmPWDWindow*, 1000)&#xA;ConfirmPWDWindow.WaitVCLNETObject(ConfirmPWDWindow, 1000)&#xA;ConfirmPWDWindow.WaitVCLNETObject(UCOpenNewShift, 1000)&#xA;ConfirmPWDWindow.WaitWPFObject(UCOpenNewShift, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(UCOpenNewShift, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(Sys.Process(, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;HwndSource: WindowDialog&quot;, &quot;&quot;).WPFObject(&quot;WindowDialog&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DialogPresenter&quot;).WPFObject(&quot;UCConfirmPwd&quot;, &quot;&quot;, 1), 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.UCConfirmPwd, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(CashaLot.UC.ReceiptControls.UCConfirmPwd, 1000)&#xA;ConfirmPWDWindow.WaitWinFormsObject(UCConfirmPwd, 1000)&#xA;shifts.GetValue(3)&#xA;shifts.GetValue(2)&#xA;shifts.GetValue(1)&#xA;shifts.GetValue(0)&#xA;RROGroup.Child(0)&#xA;this.GOComboBox.Obj.Items.get_Item(i)&#xA;shifts.GetValue(i).BtnOpen.Click()&#xA;aqString.ToUpper(shifts.GetValue(i).Name)&#xA;GOComboBox.Obj.Items.get_Item(i).Child(0)&#xA;shifts.Count&#xA;RROGroup&#xA;RROGroup.get_Item(0)&#xA;shifts.GetValue(4)&#xA;shifts.get_Item(0)&#xA;shifts&#xA;shifts.GetValue(i).BtnOpen.ClickButton()&#xA;shifts.GetValue(i).BtnOpen&#xA;shifts.GetValue(i)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border2.SelectGO.SelectItemWithValue(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border2.SelectGO.Items.get_Item(0))&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border2.SelectGO.SelectItemWithValue(GOComboBox.Obj.Items.get_Item(0))&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Border2.SelectGO.SelectItemWithValue(GOComboBox.Obj.Items.get_Item(0)&#xA;GOComboBox.Obj&#xA;GOComboBox.Obj.wItemCount&#xA;GOComboBox.Obj.w&#xA;GOComboBox.Obj.Items.get_Item(1)&#xA;GOComboBox.Obj.Items.get_Item(0)&#xA;GOComboBox.Items.get_Item(0)&#xA;GOComboBox.Items.get_Items(0)&#xA;this.UsersUCPostponedReceiptsCmb.Items.get_Item(0).Name.OleValue&#xA;this.UsersUCPostponedReceiptsCmb.Items.get_Item(2).Name.OleValue&#xA;this.PrroUCPostponedReceiptsCmb.Items.get_Item(2).Name.OleValue&#xA;this.PrroUCPostponedReceiptsCmb.Items.get_Item(1).Name.OleValue&#xA;this.UserOperationsHistoryCmb.SelectItemWithValue(this.UserOperationsHistoryCmb.Items.get_Item(1), true)&#xA;this.UserOperationsHistoryCmb.SelectItemWithValue(this.UserOperationsHistoryCmb.Items.get_Item(i), true)&#xA;this.UserOperationsHistoryCmb.SelectItemWithValue(this.UserOperationsHistoryCmb.Items.get_Item(i).FIO.OleValue)&#xA;this.UserOperationsHistoryCmb.SelectItemWithValue()&#xA;this.UserOperationsHistoryCmb.Items.get_Item(i).FIO.OleValue&#xA;this.UserOperationsHistoryCmb.Items&#xA;this.UserOperationsHistoryCmb.Items.get_Items()&#xA;this.UserOperationsHistoryCmb.Items.CurrentItem.FIO.OleValue&#xA;this.UserOperationsHistoryCmb.SelectNext();&#xA;this.UserOperationsHistoryCmb.Items.get_Item(i)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.set_Name(&quot;Вчора&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.UpdateContent()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.set_EndPeriod(&quot;25.03.2022&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.set_StartPeriod(&quot;03.02.2022&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.set_StartPeriod(&quot;01/02/2022&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.set_StartPeriod(&quot;5/1/2008 8:30:52 AM&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.set_StartPeriod(2008, 3, 1, 7, 0, 0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.set_StartPeriod()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker.StartPeriod.AddDays(05)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker&#xA;this.Obj&#xA;this.Obj.Obj&#xA;this.Obj.Items&#xA;this.MessageObject.Text&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext().set_SelectedGoods(new Object(&quot;Інше333&quot;))&#xA;this.ChooseProduct.DataContext.SelectedGoods&#xA;this.ChooseProduct.DataContext.SelectedGoods.Count&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext().set_SelectedGoods(&quot;Інше333&quot;)&#xA;this.ChooseProduct.DataContext&#xA;this.ChooseProduct.DataContext.SelectedGoods.get_Item(0).Name.OleValue&#xA;this.ChooseProductDataContext&#xA;this.ChooseProductDataContext.SelectedGoods.get_Item(0).Name.OleValue&#xA;this.ChoosePRRO.DataContext&#xA;this.ChooseZzvit.DataContext&#xA;this.ChooseZzvit.DataContext.ZReports.get_Item()&#xA;this.ChooseZzvit&#xA;this.ChooseZzvit.DataContext.ZReports&#xA;this.ChooseZzvit.DataContext.ZReports.get_Item(0)&#xA;this.ChoosePRRO.DataContext.RroSource.get_Item(0)&#xA;this.ChoosePRRO.get_Item(0)&#xA;this.ChooseCashier.DataContext.PayMasters.get_Item(0).FIO.OleValue&#xA;this.ChooseCashier.DataContext.PayMasters.get_Item(0)&#xA;this.ChooseCashierDataContext.GoodsGroups.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.set_SelectedGoodsGroup(this.ChooseProductGroup.DataContext.GoodsGroups.get_Item(i))&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.set_SelectedGoodsGroup()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.set_SelectedGoodsGroup(&quot;Ломбардні операції&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct&#xA;this.ChooseProductGroup.Click();&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.Focus()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.Focus(true)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.FindName(&quot;Ломбардні операції&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.FindName(&quot;&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.GetUnderlyingObject()&#xA;this.ChooseProductGroup&#xA;this.ChooseProductGroup.Click()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.GoodsGroups&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.GoodsGroups.GetEnumerator()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.GoodsGroups.get_Item(1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.GoodsGroups.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.GoodsGroups.get_Item(2)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.DataContext.SelectedGoodsGroup.set_Name(&quot;Інше&quot;)&#xA;Aliases.CashaLot.HwndSource_PopupRoot3.PopupRoot.Comboboxitem&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.Seal()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.GetFieldInfo()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.set_Selected(&quot;Ломбардні операції&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_Selected()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_ContextMenu()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.Enter()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.WPFObject()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.Click()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.set_Name(&quot;Інше&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.set_TreeLevel(0)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.set_TreeLevel(1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.set_TreeLevel&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.set_Selected(&quot;Ломбрадні операції&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.set_Selected(&quot;Інше&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.set_Selected(&quot;Інші&quot;)&#xA;Aliases&#xA;Aliases.CashaLot&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext()&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext().set_SelectedGoods(&quot;Інше&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext().SelectedGoodsGroup.set_SelectedGoods(&quot;Інше&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext().SelectedGoodsGroup.set_SelectedGoodsGroup(&quot;Інше&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext().SelectedGoodsGroup&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext().set_SelectedGoodsGroup(1)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.get_DataContext().set_SelectedGoodsGroup(&quot;Інше&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct.FindName(&quot;Інше&quot;)&#xA;Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.UCPeriodicalReportPrepare.cmbPRRO.Items.CurrentItem&#xA;this.GoPeriodicalReportsCmb.Items.get_Item(3)&#xA;this.GoPeriodicalReportsCmb.Items.get_Item(2)&#xA;this.GoPeriodicalReportsCmb.Items.get_Item(1)&#xA;this.GoPeriodicalReportsCmb.Items.get_Item(0)&#xA;this.GoPeriodicalReportsCmb.Items.get_Items()&#xA;this.GoPeriodicalReportsCmb.SelectNext();&#xA;this.GoPeriodicalReportsCmb.Items&#xA;Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.UCPeriodicalReportPrepare.Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.Border.Visible&#xA;Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.Border.Exists&#xA;Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.Border.DataContext.Visable&#xA;Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.Border.DataContext.Exists&#xA;new Objects.CashalotObject(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_).GetType()&#xA;new Objects.CashalotObject(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_).GetType();&#xA;new Objects.CashalotObject(mainWnd).GetType();&#xA;menu.OpenModules(CONST.ZVITY, CONST.DAILYREPORTS)&#xA;this.MethodPayCmb.Items.get_Item(i)&#xA;this.MethodPayCmb.Items&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Visible&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.AdvancedSearch&#xA;NameMapping.Sys.CashaLot.HwndSource_mainWindow.mainWindow_.Grid.Border2.Grid.WPFObject(&quot;TextBlock&quot;, &quot;Користувач&quot;, 7).IsVisible&#xA;NameMapping.Sys.CashaLot.HwndSource_mainWindow.mainWindow_.Grid.Border2.Grid.WPFObject(&quot;TextBlock&quot;, &quot;Користувач&quot;, 7)&#xA;NameMapping.Sys.CashaLot.HwndSource_mainWindow.mainWindow_.Grid.Border2.Grid.WPFObject(&quot;TextBlock&quot;, &quot;Користувач&quot;, 7).VisibleOnScreen&#xA;NameMapping.Sys.CashaLot.HwndSource_mainWindow.mainWindow_.Grid.Border2.Grid.WPFObject(&quot;TextBlock&quot;, &quot;Користувач&quot;, 7).Visible&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox5&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.SimpleSearch.Exists&#xA;this.GoCmb.Items.get_Item(0).Name.OleValue&#xA;this.GoCmb.Items.get_Item(0)&#xA;this.GoCmb&#xA;this.GoCmb.getValue(1)&#xA;this.GoCmb.getValue(0)&#xA;new Objects.CashalotObject(mainWnd).GetType()&#xA;this.PeriodPicker&#xA;this.PeriodPicker.currentPeriodType&#xA;this.PeriodPicker.currentPeriodType.GetValue()&#xA;this.PeriodPicker.currentPeriodType.GetValue(0)&#xA;this.PeriodPicker.currentPeriodType.GetValues()&#xA;postponedChecks.PrroCmb&#xA;postponedChecks.PrroCmb.get_ItemTemplateSelector()&#xA;postponedChecks.PrroCmb.SelectAllImpl()&#xA;postponedChecks.PrroCmb.SelectItemWithValue(&quot;ПРРО №1&quot;, false)&#xA;postponedChecks.PrroCmb.SelectItemWithValue(&quot;ПРРО №1&quot;)&#xA;postponedChecks.PrroCmb.SelectItemWithValue(&quot;ПРРО №1&quot;, true)&#xA;postponedChecks.UsersCmb.wItemCount&#xA;postponedChecks.UsersCmb&#xA;postponedChecks&#xA;postponedChecks.UsersCmb.SelectNext();&#xA;postponedChecks.UsersCmb.SelectPrev();&#xA;UsersCmb.SelectFirst()&#xA;UsersCmb.SelectNext();&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.SelectValue()&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox).SelectNext()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.SelectPrev()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.get_Teg()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.get_Cursor()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.get_Items()&#xA;deferredChecks.UsersList.GetValue(1)&#xA;deferredChecks&#xA;deferredChecks.SelectUser(&quot;Всі користувачі&quot;)&#xA;deferredChecks.SelectUser(&quot;Старший К. П.&quot;)&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2).SelectItem(&quot;ПРРО №1&quot;)&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox).SelectItem(&quot;Всі користувачі&quot;)&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox).SelectItem(&quot;Старший К. П.&quot;)&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox).SelectItem(&quot;Старший К.П.&quot;)&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox).Items&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox).Items.SelectItem(&quot;Старший К.П.&quot;)&#xA;deferredChecks.UsersList&#xA;deferredChecks.UsersList.GetValue(1).get_FIO()&#xA;deferredChecks.UsersList.GetValue(1).getFIO()&#xA;deferredChecks.UsersList.GetValue(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.SelectItemWithValue(&quot;Старший К.П.&quot;, true)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.SelectItemWithValue(&quot;Старший К.П.&quot;)&#xA;deferredChecks.UsersList.SelectItem(&quot;Старший К.П.&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox.SelectItemWithValue&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox)&#xA;new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox).SelectItems(&quot;Старший К.П.&quot;)&#xA;dotNET.System_IO.File.Copy_2(&quot;C:\\ProgramData\\Cashalot\\Cashalot\\cash.lot&quot;, &quot;C:\\ProgramData\\Cashalot\\Cashalot\\cashCopy.lot&quot;)&#xA;aqString.GetLength(guid)&#xA;aqString.SubString(guid, 1 , aqString.GetLength(guid)-4)&#xA;aqString.Trim(guid, 3)&#xA;aqString.SubString(guid, 1 , aqString.GetLength(guid)-2)&#xA;aqString.GetLength(guid)-1&#xA;aqString.SubString(guid, 1 , aqString.GetLength(guid))&#xA;aqString.SubString(guid, 1 , aqString.GetLength(guid-1))&#xA;Project.Variables.ExecutionGuid&#xA;this.Items.GetValue(2)&#xA;this.Items.GetValue(0)&#xA;this.Items.GetValue(1)&#xA;TestSteps.GetValue(i)&#xA;TestSteps&#xA;TestSteps.GetValue[i]&#xA;mainMenuExpander.ClickItem(exp2)&#xA;dictionaryModuleName.GetKeys()&#xA;dictionaryModuleName.GetValues()&#xA;this.Items.GetValue(j).SubMenuItems.GetValue(4).MenuName&#xA;this.Items.GetValue(j).SubMenuItems.GetValue(3).MenuName&#xA;this.Items.GetValue(j).SubMenuItems.GetValue(2).MenuName&#xA;this.Items.GetValue(j).SubMenuItems.GetValue(1).MenuName&#xA;this.Items.GetValue(j).SubMenuItems.GetValue(0).MenuName&#xA;this.Items.GetValue(j).SubMenuItems.GetValue(k).MenuName&#xA;aqString.ToUpper(dictionaryModuleName.GetKeys()[1])&#xA;aqString.ToUpper(dictionaryModuleName.GetValues()[i]) == aqString.ToUpper(this.Items.GetValue(j).MenuName)&#xA;aqString.ToUpper(dictionaryModuleName.GetValues()[i]) == aqString.ToUpper(this.Items.GetValue(j).MenuName&#xA;aqString.ToUpper(this.Items.GetValue(j).SubMenuItems.GetValue(k).MenuName)&#xA;this.Items.GetValue(j)&#xA;this.Items.GetValue(j).SubMenuExists&#xA;menuitem.SubMenuExists&#xA;menuitem.SubMenuExists = false&#xA;exp2&#xA;exp1&#xA;menuitem.SubMenuItems.GetValue(3).MenuName&#xA;menuitem.SubMenuItems.GetValue(2).MenuName&#xA;menuitem.SubMenuItems.GetValue(1).MenuName&#xA;menuitem.SubMenuItems.GetValue()&#xA;exp&#xA;exp = undefined&#xA;NameMenu.GetValues()[0]&#xA;NameMenu.GetValues()&#xA;NameMenu.GetValue()[0]&#xA;NameMenu.GetValue()&#xA;NameMenu.Items().toArray()[0] &#xA;NameMenu.GetValue(&quot;Операції&quot;)&#xA;NameMenu.GetKeys()[0]&#xA;NameMenu.GetKeys()[0].GetValue()&#xA;NameMenu.GetKeys(0)&#xA;NameMenu.GetKeys()&#xA;NameMenu.GetKeys()[0].toArray()&#xA;NameMenu.GetValue(&quot;Відкладені чеки&quot;)&#xA;NameMenu.Item(&quot;Відкладені чеки&quot;)&#xA;NameMenu.GetValue[0]&#xA;NameMenu.GetValue[0].toArray()&#xA;NameMenu.GetValue&#xA;NameMenu.Items().toArray()[0]&#xA;NameMenu.Items()&#xA;NameMenu.Items()[0]&#xA;NameMenu[0]&#xA;NameMenu&#xA;NameMenu.Keys(&quot;Операції&quot;)&#xA;NameMenu.Key(&quot;Операції&quot;)&#xA;NameMenu.Key()&#xA;NameMenu.Key&#xA;NameMenu.Item&#xA;NameMenu.Items(&quot;Відкладені чеки&quot;)&#xA;NameMenu.Items(&quot;&quot;)&#xA;NameMenu.Items()[0].to_Array&#xA;NameMenu.Items()[0].&#xA;NameMenu.Items().GetValue()&#xA;NameMenu.Item()&#xA;NameMenu.Count&#xA;NameMenu.Coun&#xA;NameMenu.Count()&#xA;new DictionaryData.MenuName().menuNameDictionary&#xA;new DictionaryData.MenuName()&#xA;NameMenu.menuNameDictionary&#xA;NameMenu.menuNameDictionary.GetValue(&quot;Операції&quot;)&#xA;NameMenu.menuNameDictionary.Count()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Visible&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView&#xA;openModule&#xA;openModule.get_Item()&#xA;openModule.Items&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(4).Items.get_Item(0).Header.Children.get_Item(0).RenderOpen()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(4).Items.get_Item(0).Header.Children.get_Item(0).RenderOpen().get_Dispatcher().Run()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(4).Items.get_Item(0).Header.Children.get_Item(0).RenderOpen().get_Dispatcher()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(4).Items.get_Item(0).Header.Children.get_Item(0)&#xA;shifts.GetValue(i).Open()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(4).Items.get_Item(0).Header.Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(2).Items.get_Item(3).Header.Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(2).Items.get_Item(0).Header.Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(3).Header.Children.get_Item(1).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(2).Header.Children.get_Item(1).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(2).Children.get_Item(1).Children.get_Item(1).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(2).Header.Children.get_Item(1).Children.get_Item(1).Children.get_Item(1).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Items.get_Item(0).Header.Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Items.get_Item(1).Header.Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Items.get_Item(0).Header.Children.get_Item(1).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Items.get_Item(1).Header.Children.get_Item(1).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(1).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(1).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(1).Children.get_Item(1).Children.get_Item(0).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(1).Children.get_Item(1).Children.get_Item(1).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(1).Children.get_Item(2).Children.get_Item(1).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(1).Children.get_Item(1).Children.get_Item(2).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(0).Header.Children.get_Item(1).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(3).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(2).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(1).Children.get_Item(2).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Children&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1).Children.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Item(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Value(1)&#xA;openMenu.OpenByName(&quot;Звіти&quot;);&#xA;openMenu.OpenByName(&quot;Відкладені чеки&quot;);&#xA;getMenu.OpenByName(&quot;Звіти&quot;)&#xA;getMenu.OpenByName(&quot;Всі каси&quot;)&#xA;getMenu&#xA;getMenu.GetValue(0)&#xA;k&#xA;menuitem.SubMenuItems.GetValue(2)&#xA;menuitem.SubMenuItems.GetValue(1)&#xA;menuitem.SubMenuItems.GetValue(0)&#xA;menuitem.SubMenuItems&#xA;aqString.ToUpper(itemarraychild)&#xA;aqString.ToUpper(itemarrayparent)&#xA;aqString.ToUpper(menuitem.SubMenuItems.GetValue(k).MenuName)&#xA;j&#xA;aqString.ToUpper(menuitem.SubMenuItems&#xA;aqString.ToUpper(menuitem.SubMenuItems.GetValue(j).MenuName)&#xA;aqString.ToUpper(itemArrayChild[i])&#xA;aqString.ToUpper(this.Items.GetValue(j).MenuName&#xA;aqString.ToUpper(itemArrayParent[i])&#xA;aqString.Format(&quot;|[%i]&quot;,i)&#xA;aqString.Format(&quot;|[%i]&quot;,&quot;|[%j]&quot;)&#xA;aqString.ToUpper(itemArray[i])&#xA;this.Open(menuitem.SubMenuItems.GetValue(1).Key)&#xA;this.Open(menuitem.SubMenuItems.GetValue(1))&#xA;mainMenuExpander.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(1).Children.get_Item(0)&#xA;mainMenuExpander.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(1).Children.get_Item(1)&#xA;mainMenuExpander.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;mainMenuExpander.Items.get_Item(2).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;mainMenuExpander.Items.get_Item(0).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(1).Children.get_Item(0).Text.OleValue&#xA;mainMenuExpander.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(2).Children.get_Item(0).Text.OleValue&#xA;mainMenuExpander.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(0).Children.get_Item(0).Text.OleValue&#xA;mainMenuExpander.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1).Children.get_Item(1).Children.get_Item(1).Text.OleValue&#xA;mainMenuExpander.Items.get_Item(1).Header.Children.get_Item(item.Header.Children.Count-1)&#xA;mainMenuExpander.Items.get_Item(1)&#xA;this.Items.Contains()&#xA;this.Items.get_Item(1)&#xA;this.Items.GetItem(1)&#xA;this.Items.Count&#xA;menuitem.SubMenuItems.Count&#xA;this.Items.GetValue(6)&#xA;this.Items.GetValue(4)&#xA;this.Items.GetValue(3)&#xA;dockPanel.Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 3)&#xA;.WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 3)&#xA;childSlugboviExpd.GetValue(i).Click()&#xA;childSlugboviExpd.GetValue(i).Open()&#xA;childSlugboviExpd.GetValue(i)&#xA;childSlugboviExpd&#xA;childSlugboviExpd.getItem()&#xA;childSlugboviExpd[i].toArray()&#xA;childSlugboviExpd.[i].toArray()&#xA;childSlugboviExpd.toArray()[i]&#xA;childSlugboviExpd[i]&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Activate()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_&#xA;expanderButton.set_Focusable(true)&#xA;childSlugboviExpd.Count&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 2).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtSubmenuCashDocuments&quot;).Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtSubmenuCashDocuments&quot;).Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;).Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Value()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.get_Name&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Items.GetName()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1)[0]&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1)[1]&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).[1]&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[1].Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).get_Name()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).GetName(1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).GetName(0)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).GetValue(1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).GetValue(1).Name&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[1].get_Name()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;).get_Name()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;).get_Name().OleValue()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;).get_Name().OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;).get_Name&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;).GetValue().Name&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;).GetValue(1).Name&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtPostponedReceipts&quot;).GetValue(0).Name&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[1]&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).GetValue(1).Open()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[1].Open().Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[1].Open()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).Open()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[0].Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[3].Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[4].Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[2].Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 3).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtOperationHistory&quot;).ClickItem()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 3).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtOperationHistory&quot;).Exists&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 2).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;txtSubmenuCashDocuments&quot;).MappedName.Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).MappedName&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).Select()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).MappedName&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[6]&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[6].ClickItem()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.ClickItem(&quot;slugboviExpd&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.ClickItem(&quot;|[1]|[0]&quot;)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[6].Value&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[6].Value.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[15].Value.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[2].Value.OleValue&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[0].Value.OleValue &#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()[0]&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView[0]&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;dovidnikuExpd&quot;).get_Name()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;skladExpd&quot;).get_Items()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;TreeViewItem&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAll(&quot;WPFObject&quot;, &quot;slugboviExpd&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;skladExpd&quot;,10).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;skladExpd&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;MappedName&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;slugboviExpd&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;slugboviExpd&quot;,1)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;TreeViewItem&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;StackPanel&quot;,3).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;StackPanel&quot;,1).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;, ).toArray()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;WPFObject&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;TreeViewItem&quot;, &quot;*&quot;, 3)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;TreeViewItem&quot;, *, 3)&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren(&quot;TreeViewItem&quot;, *, 3, true)&#xA;Aliases.CashaLot.HwndSource_mainWindow.Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.Image.Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindAllChildren()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.Click()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.FindChild()&#xA;Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.MainMenu1.treeView.WPFObject(&quot;slugboviExpd&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).MappedName.Click()&#xA;expanderButton&#xA;expanderButton.Click();&#xA;grid.Click()&#xA;allCashBox&#xA;allCashBox.Result&#xA;shifts.GetValue(3).Name&#xA;shifts.GetValue(2).Name&#xA;shifts.GetValue(1).Name&#xA;shifts.GetValue(0).Name&#xA;toString(myCar)&#xA;windowDlg.UCProxySettings.btnSaveProxy&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;), 1000).Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;HwndSource: LoginView&quot;, &quot;Авторизація&quot;, 0), 1000).Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;HwndSource: LoginView&quot;, &quot;Авторизація&quot;, 0), 1000)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;LoginView&quot;, &quot;Авторизація&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1), 1000)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1), 1000)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;HwndSource: LoginView&quot;, &quot;Авторизація&quot;).WPFObject(&quot;LoginView&quot;, &quot;Авторизація&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1), 1000)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1), 1000)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1), 1000).Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(Sys.Process(&quot;CashaLot&quot;).WPFObject(&quot;Border&quot;, &quot;&quot;, 1), 1, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(WPFObject(&quot;Border&quot;, &quot;&quot;, 1), 1, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(&quot;Авторизація&quot;, 1, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(&quot;LoginView&quot;, 1, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(&quot;LoginView&quot;, 1000).Exists&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(&quot;CashaLot&quot;, 1000)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject(&quot;Border&quot;, 1000)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWPFObject()&#xA;app.WaitWindow(&quot;HwndSource: LoginView&quot;, &quot;Авторизація&quot;)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.WaitWindow(&quot;HwndSource: LoginView&quot;, &quot;Авторизація&quot;)&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.WaitWindow(&quot;HwndSource: LoginView&quot;, &quot;Авторизація&quot;)&#xA;app.WaitWindow(&quot;HwndSource: LoginView&quot;, &quot;Авторизація&quot;, -1, 10000)&#xA;app.WaitWindow(&quot;CashaLot&quot;, &quot;&quot;, 1, 10000)&#xA;app.WaitWindow(&quot;CashaLot&quot;, &quot;&quot;, -1, 10000)&#xA;app.WaitWindow(&quot;CashaLot&quot;, &quot;&quot;, -1, 10000).Exists&#xA;app.WaitWindow(&quot;Border&quot;, &quot;&quot;, -1, 10000).Exists&#xA;app.WaitWindow(&quot;Border&quot;, &quot;&quot;, 1, 10000).Exists&#xA;app.WaitWindow(&quot;Grid&quot;, &quot;&quot;, 1, 10000).Exists&#xA;app.WaitWindow(&quot;Grid&quot;, &quot;&quot;, 1, 1000).Exists&#xA;app.WaitWindow(&quot;HwndSource: LoginView&quot;, &quot;Авторизація&quot;, -1, 1000).Exists&#xA;app.WaitWindow()&#xA;TestSteps.Value(i)&#xA;TestSteps.getValue()&#xA;Aliases.CashaLot.HwndSource_LoginView.LoginView.Border.tabCtrl.mCmbCerts&#xA;this.UserNameComboBox&#xA;TestedApps.Items(&quot;25&quot;)&#xA;grid&#xA;grid.DataContext.DeleteReceiptCommand.CanExecute(null)&#xA;grid.DataContext.DeleteReceiptCommand&#xA;grid.DataContext.DeleteReceiptCommand.Execute(grid.Items.get_Item(0))&#xA;receipt&#xA;receipt.Delete()&#xA;new Objects.Receipt(grid.Items.get_Item(0))&#xA;grid.DataContext.DeleteReceiptCommand.Execute()&#xA;grid.DataContext&#xA;grid.Items.get_Item(0)&#xA;object.Items.get_Item(0).CashierName.OleValue&#xA;object.Items.get_Item(0).CashierName&#xA;object.Items.get_Item(0)&#xA;object&#xA;object.Items&#xA;object.GetRow(0)&#xA;object.Columns.get_Item(0)&#xA;object.Columns&#xA;mainWnd.get_DataContext().CurrentViewModel&#xA;mainWnd.get_DataContext().CurrentViewModel.Exists&#xA;mainWnd.get_DataContext()&#xA;_object.ClrClassName&#xA;aqString.ToUpper(itemArray[0])&#xA;mainmenu.Items.GetValue(1)&#xA;mainmenu.Items.GetValue(0)&#xA;mainmenu.Items"/>
+			</Node>
+			<Node name="{86873e45-42bf-4c44-8fbd-d6bdfbfd5189}"/>
+			<Node name="{90fe4d39-229d-4887-ac6f-07b02ce523fc}">
+				<Node name="{90fe4d39-229d-4887-ac6f-07b02ce523fc}"/>
+			</Node>
+			<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}">
+				<Node name="{00000000-0000-0000-0000-000000000000}">
+					<Node name="{008c44dc-1a5b-440c-bb96-a59ec802b4c3}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="64"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Prp name="bottom" type="I" value="64"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{025cbe07-a86d-4047-80e2-1d1c29fce01b}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="14"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="64"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="35"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="460"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="67"/>
+						</Node>
+						<Prp name="bottom" type="I" value="475"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{08f387bf-9958-44b0-87a7-3d42408c6513}">
+						<Prp name="bottom" type="I" value="18"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{0a395003-1392-46a6-835f-20e34c0fce9a}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="6"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="14"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="8"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="22"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="16"/>
+						</Node>
+						<Prp name="bottom" type="I" value="24"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{0be33f1b-098e-45c2-a84b-b510d8c4d34d}">
+						<Prp name="bottom" type="I" value="0"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{0c17d1ef-69dc-4a76-be3a-1d9838acd1b4}">
+						<Prp name="bottom" type="I" value="1"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{10cc65ec-a54d-489c-9d77-79d8a0d67856}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="2"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="18"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="6"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="29"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="20"/>
+						</Node>
+						<Prp name="bottom" type="I" value="40"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{141ccf9e-e5f3-4150-b55d-502e65dbffa3}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="6"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="3"/>
+						</Node>
+						<Prp name="bottom" type="I" value="6"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{27ecdd0a-0ea5-4496-9e96-793dbfb84c09}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="11"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="65"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="36"/>
+						</Node>
+						<Node name="2">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="240"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="239"/>
+							</Node>
+							<Prp name="bottom" type="I" value="276"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="68"/>
+						</Node>
+						<Prp name="bottom" type="I" value="296"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{283b1d13-cf09-4ed7-b28f-00ce6aee0f2d}">
+						<Prp name="bottom" type="I" value="4"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{2c71d6fd-9c47-438d-b39e-d0d075392f42}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="28"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Prp name="bottom" type="I" value="28"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{315e5948-d89e-495c-ab44-f31f8ebdebbc}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="14"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="68"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="38"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="408"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="71"/>
+						</Node>
+						<Prp name="bottom" type="I" value="425"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{33fa8f4e-b5cd-4d25-8096-312950d2be9c}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="101"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="27"/>
+						</Node>
+						<Prp name="bottom" type="I" value="102"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{3451b90d-4d09-4698-be6d-10fdabe3ddb1}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="53"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="4"/>
+						</Node>
+						<Prp name="bottom" type="I" value="53"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{34ca6506-f159-4da2-846b-dfbbe3b5421f}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="4"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="99"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="51"/>
+							</Node>
+							<Node name="1">
+								<Prp name="bottom" type="I" value="139"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="136"/>
+							</Node>
+							<Prp name="bottom" type="I" value="155"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="8"/>
+						</Node>
+						<Prp name="bottom" type="I" value="167"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{3d8f0f62-3e89-4686-880a-5c34b9635dfe}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="178"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="3"/>
+						</Node>
+						<Prp name="bottom" type="I" value="179"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{40f1cdd6-33bb-4212-b648-cd5fddd9445d}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="6"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="11"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="8"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="17"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="13"/>
+						</Node>
+						<Prp name="bottom" type="I" value="17"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{42619adf-f760-4308-8dc4-81df5816b87d}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="16"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="33"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="19"/>
+						</Node>
+						<Prp name="bottom" type="I" value="52"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{520972c9-e4b8-40b5-8590-e1eeb821d635}">
+						<Prp name="bottom" type="I" value="18"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{536f8385-5ff8-41dd-a4c3-d9b76fd21f42}">
+						<Prp name="bottom" type="I" value="2"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{607e785a-add2-490d-9440-3ea0f0ca66f5}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="60"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="1"/>
+						</Node>
+						<Prp name="bottom" type="I" value="60"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{61ac69f1-8170-44dc-89a2-96bba8f2eafa}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="2"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="33"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="6"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="101"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="36"/>
+						</Node>
+						<Node name="3">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="184"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="176"/>
+							</Node>
+							<Prp name="bottom" type="I" value="220"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="104"/>
+						</Node>
+						<Node name="4">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="370"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="316"/>
+							</Node>
+							<Prp name="bottom" type="I" value="371"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="223"/>
+						</Node>
+						<Prp name="bottom" type="I" value="388"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{6b000729-066e-4769-b573-8d65a8ab19d9}">
+						<Prp name="bottom" type="I" value="0"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{77b089b7-114d-4a5a-a70d-566d86f0c729}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="3"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="31"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="7"/>
+						</Node>
+						<Prp name="bottom" type="I" value="31"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{78a8c0ae-f14b-44e2-8902-1f5755a34be9}">
+						<Prp name="bottom" type="I" value="0"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{7a6566f2-ebca-4242-b4a1-393151e1c062}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="75"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="3"/>
+						</Node>
+						<Prp name="bottom" type="I" value="75"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{814b42e1-f799-468c-83c9-e0f1d170a732}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="9"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="59"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="30"/>
+						</Node>
+						<Node name="2">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="201"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="194"/>
+							</Node>
+							<Prp name="bottom" type="I" value="202"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="62"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="209"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="204"/>
+						</Node>
+						<Prp name="bottom" type="I" value="209"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{869d9523-1750-4293-95d7-8bb174bc9624}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="22"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="46"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="24"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="209"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="48"/>
+						</Node>
+						<Prp name="bottom" type="I" value="212"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{89dea6b1-4540-40bb-8f72-0e20ffd81d83}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="5"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="4"/>
+						</Node>
+						<Prp name="bottom" type="I" value="176"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{8ae05dba-d3b1-4532-bf16-6dc52678c1df}">
+						<Prp name="bottom" type="I" value="15"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{964022d1-0681-4696-958e-0e2b959b76ad}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="21"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="62"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="23"/>
+						</Node>
+						<Prp name="bottom" type="I" value="62"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{98d09b76-d473-45fa-b3b9-1761700b5fbe}">
+						<Prp name="bottom" type="I" value="126"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{9cba142f-2e5e-4392-988a-9bc8297e4b6e}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="92"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="4"/>
+						</Node>
+						<Prp name="bottom" type="I" value="92"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{a01e7178-fdf3-447f-bbe2-a41adda5dbb0}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="11"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="60"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="31"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="181"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="63"/>
+						</Node>
+						<Prp name="bottom" type="I" value="181"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{a026db05-cc9c-47bd-beb1-20257b81ccc1}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="124"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Prp name="bottom" type="I" value="124"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{a8d4173a-a5f6-483c-80ac-d83c3d468d3b}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="44"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Prp name="bottom" type="I" value="56"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{b33dbcda-cb5e-48ac-b3a2-3fee1ac498a9}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="95"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="90"/>
+							</Node>
+							<Node name="1">
+								<Prp name="bottom" type="I" value="203"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="195"/>
+							</Node>
+							<Prp name="bottom" type="I" value="374"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="4"/>
+						</Node>
+						<Prp name="bottom" type="I" value="387"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{bb1336a2-0baf-47ea-a912-75d8a346c916}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="3"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="56"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="6"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="79"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="58"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="138"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="81"/>
+						</Node>
+						<Prp name="bottom" type="I" value="165"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{c092daca-89fa-401d-9da3-50bd8d55a426}">
+						<Prp name="bottom" type="I" value="1"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{c20b01d9-3e43-434d-88bf-2eb818662dbe}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="31"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="3"/>
+						</Node>
+						<Prp name="bottom" type="I" value="90"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{c35b412b-67bb-40ce-ae44-87e44d3c56d7}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="4"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="19"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="6"/>
+						</Node>
+						<Node name="10">
+							<Prp name="bottom" type="I" value="240"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="182"/>
+						</Node>
+						<Node name="11">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="251"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="249"/>
+							</Node>
+							<Prp name="bottom" type="I" value="280"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="242"/>
+						</Node>
+						<Node name="12">
+							<Prp name="bottom" type="I" value="292"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="282"/>
+						</Node>
+						<Node name="13">
+							<Prp name="bottom" type="I" value="357"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="295"/>
+						</Node>
+						<Node name="14">
+							<Prp name="bottom" type="I" value="391"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="359"/>
+						</Node>
+						<Node name="15">
+							<Prp name="bottom" type="I" value="436"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="393"/>
+						</Node>
+						<Node name="16">
+							<Prp name="bottom" type="I" value="474"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="438"/>
+						</Node>
+						<Node name="17">
+							<Prp name="bottom" type="I" value="585"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="476"/>
+						</Node>
+						<Node name="2">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="36"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="28"/>
+							</Node>
+							<Prp name="bottom" type="I" value="38"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="21"/>
+						</Node>
+						<Node name="3">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="47"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="43"/>
+							</Node>
+							<Node name="1">
+								<Prp name="bottom" type="I" value="57"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="49"/>
+							</Node>
+							<Prp name="bottom" type="I" value="61"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="41"/>
+						</Node>
+						<Node name="4">
+							<Prp name="bottom" type="I" value="71"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="63"/>
+						</Node>
+						<Node name="5">
+							<Prp name="bottom" type="I" value="83"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="73"/>
+						</Node>
+						<Node name="6">
+							<Prp name="bottom" type="I" value="92"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="85"/>
+						</Node>
+						<Node name="7">
+							<Prp name="bottom" type="I" value="103"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="94"/>
+						</Node>
+						<Node name="8">
+							<Prp name="bottom" type="I" value="123"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="105"/>
+						</Node>
+						<Node name="9">
+							<Prp name="bottom" type="I" value="178"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="126"/>
+						</Node>
+						<Prp name="bottom" type="I" value="660"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{c4a6d880-743c-4023-9504-900de5c024b0}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="25"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="3"/>
+						</Node>
+						<Prp name="bottom" type="I" value="25"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{c8b99f13-2d55-4852-beda-87e414a7333f}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="4"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="28"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="25"/>
+							</Node>
+							<Prp name="bottom" type="I" value="84"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="9"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="186"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="87"/>
+						</Node>
+						<Node name="3">
+							<Node name="0">
+								<Node name="0">
+									<Prp name="bottom" type="I" value="209"/>
+									<Prp name="collapsed" type="B" value="0"/>
+									<Prp name="top" type="I" value="208"/>
+								</Node>
+								<Prp name="bottom" type="I" value="232"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="206"/>
+							</Node>
+							<Node name="1">
+								<Prp name="bottom" type="I" value="235"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="234"/>
+							</Node>
+							<Prp name="bottom" type="I" value="472"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="190"/>
+						</Node>
+						<Node name="4">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="645"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="635"/>
+							</Node>
+							<Prp name="bottom" type="I" value="811"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="476"/>
+						</Node>
+						<Prp name="bottom" type="I" value="816"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{cb1ff3cf-9d6a-4fae-afb4-93f79b1ef335}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="5"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="14"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="8"/>
+						</Node>
+						<Node name="10">
+							<Prp name="bottom" type="I" value="351"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="346"/>
+						</Node>
+						<Node name="11">
+							<Prp name="bottom" type="I" value="388"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="354"/>
+						</Node>
+						<Node name="12">
+							<Prp name="bottom" type="I" value="397"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="390"/>
+						</Node>
+						<Node name="13">
+							<Prp name="bottom" type="I" value="409"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="399"/>
+						</Node>
+						<Node name="14">
+							<Prp name="bottom" type="I" value="417"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="411"/>
+						</Node>
+						<Node name="15">
+							<Prp name="bottom" type="I" value="478"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="419"/>
+						</Node>
+						<Node name="16">
+							<Prp name="bottom" type="I" value="489"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="480"/>
+						</Node>
+						<Node name="17">
+							<Prp name="bottom" type="I" value="531"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="491"/>
+						</Node>
+						<Node name="18">
+							<Prp name="bottom" type="I" value="592"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="533"/>
+						</Node>
+						<Node name="19">
+							<Prp name="bottom" type="I" value="614"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="594"/>
+						</Node>
+						<Node name="2">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="150"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="141"/>
+							</Node>
+							<Prp name="bottom" type="I" value="154"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="16"/>
+						</Node>
+						<Node name="20">
+							<Prp name="bottom" type="I" value="620"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="616"/>
+						</Node>
+						<Node name="21">
+							<Prp name="bottom" type="I" value="649"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="623"/>
+						</Node>
+						<Node name="22">
+							<Prp name="bottom" type="I" value="656"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="651"/>
+						</Node>
+						<Node name="23">
+							<Prp name="bottom" type="I" value="665"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="658"/>
+						</Node>
+						<Node name="24">
+							<Prp name="bottom" type="I" value="675"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="667"/>
+						</Node>
+						<Node name="25">
+							<Prp name="bottom" type="I" value="685"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="677"/>
+						</Node>
+						<Node name="26">
+							<Prp name="bottom" type="I" value="700"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="687"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="268"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="157"/>
+						</Node>
+						<Node name="4">
+							<Prp name="bottom" type="I" value="292"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="270"/>
+						</Node>
+						<Node name="5">
+							<Prp name="bottom" type="I" value="304"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="294"/>
+						</Node>
+						<Node name="6">
+							<Prp name="bottom" type="I" value="325"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="306"/>
+						</Node>
+						<Node name="7">
+							<Prp name="bottom" type="I" value="330"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="327"/>
+						</Node>
+						<Node name="8">
+							<Prp name="bottom" type="I" value="337"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="332"/>
+						</Node>
+						<Node name="9">
+							<Prp name="bottom" type="I" value="344"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="339"/>
+						</Node>
+						<Prp name="bottom" type="I" value="729"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{cb76d862-c3ac-4f74-a0d2-5c88d1cdea72}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="3"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="25"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="23"/>
+							</Node>
+							<Prp name="bottom" type="I" value="275"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="8"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="360"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="278"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="367"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="364"/>
+						</Node>
+						<Node name="4">
+							<Prp name="bottom" type="I" value="379"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="369"/>
+						</Node>
+						<Node name="5">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="392"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="390"/>
+							</Node>
+							<Prp name="bottom" type="I" value="394"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="382"/>
+						</Node>
+						<Node name="6">
+							<Prp name="bottom" type="I" value="400"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="397"/>
+						</Node>
+						<Prp name="bottom" type="I" value="400"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{d120dcdf-2f45-47a5-93b0-a8855674c0c4}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="1"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="178"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="4"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="275"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="180"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="308"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="278"/>
+						</Node>
+						<Node name="4">
+							<Prp name="bottom" type="I" value="369"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="310"/>
+						</Node>
+						<Node name="5">
+							<Prp name="bottom" type="I" value="414"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="372"/>
+						</Node>
+						<Node name="6">
+							<Prp name="bottom" type="I" value="524"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="417"/>
+						</Node>
+						<Prp name="bottom" type="I" value="539"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{d48228fb-782d-4367-bee5-9bd5e62e3701}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="4"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="11"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="6"/>
+						</Node>
+						<Node name="10">
+							<Prp name="bottom" type="I" value="68"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="65"/>
+						</Node>
+						<Node name="11">
+							<Prp name="bottom" type="I" value="73"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="70"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="17"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="13"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="23"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="19"/>
+						</Node>
+						<Node name="4">
+							<Prp name="bottom" type="I" value="30"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="25"/>
+						</Node>
+						<Node name="5">
+							<Prp name="bottom" type="I" value="35"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="32"/>
+						</Node>
+						<Node name="6">
+							<Prp name="bottom" type="I" value="41"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="37"/>
+						</Node>
+						<Node name="7">
+							<Prp name="bottom" type="I" value="47"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="43"/>
+						</Node>
+						<Node name="8">
+							<Prp name="bottom" type="I" value="53"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="49"/>
+						</Node>
+						<Node name="9">
+							<Prp name="bottom" type="I" value="63"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="55"/>
+						</Node>
+						<Prp name="bottom" type="I" value="93"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{d87fc187-1818-4e5b-b6ab-6524d058f249}">
+						<Prp name="bottom" type="I" value="2"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{d89f0fdf-3494-41ed-ace7-2d32bca8048e}">
+						<Prp name="bottom" type="I" value="0"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{d9525732-d363-4c69-970a-165d6b466e17}">
+						<Prp name="bottom" type="I" value="27"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{dd627d9e-23bc-46f6-9b5f-f9858146375f}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="68"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="2"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="170"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="70"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="293"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="172"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="320"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="296"/>
+						</Node>
+						<Node name="4">
+							<Prp name="bottom" type="I" value="331"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="322"/>
+						</Node>
+						<Node name="5">
+							<Prp name="bottom" type="I" value="368"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="333"/>
+						</Node>
+						<Node name="6">
+							<Prp name="bottom" type="I" value="420"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="370"/>
+						</Node>
+						<Node name="7">
+							<Prp name="bottom" type="I" value="457"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="422"/>
+						</Node>
+						<Node name="8">
+							<Prp name="bottom" type="I" value="485"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="460"/>
+						</Node>
+						<Prp name="bottom" type="I" value="503"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{de7fe9b4-b4ef-46af-bc88-a9750f8bfe31}">
+						<Prp name="bottom" type="I" value="5"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{df146b55-86b6-417b-8171-4433723ea5e0}">
+						<Prp name="bottom" type="I" value="0"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{e0d25280-11b2-465d-b325-8ded3b7f3a25}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="8"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="42"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="12"/>
+						</Node>
+						<Node name="2">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="60"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="51"/>
+							</Node>
+							<Node name="1">
+								<Prp name="bottom" type="I" value="98"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="62"/>
+							</Node>
+							<Node name="2">
+								<Prp name="bottom" type="I" value="290"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="288"/>
+							</Node>
+							<Prp name="bottom" type="I" value="356"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="44"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="432"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="359"/>
+						</Node>
+						<Prp name="bottom" type="I" value="432"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{e336ef45-f661-45c0-b2ae-86a4e9f31993}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="7"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="4"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="12"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="9"/>
+						</Node>
+						<Prp name="bottom" type="I" value="13"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{ea5b00a8-5432-4725-9166-f09109aefd07}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="4"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="0"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="32"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="10"/>
+						</Node>
+						<Node name="10">
+							<Prp name="bottom" type="I" value="157"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="151"/>
+						</Node>
+						<Node name="11">
+							<Prp name="bottom" type="I" value="180"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="160"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="38"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="34"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="50"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="40"/>
+						</Node>
+						<Node name="4">
+							<Node name="0">
+								<Prp name="bottom" type="I" value="57"/>
+								<Prp name="collapsed" type="B" value="0"/>
+								<Prp name="top" type="I" value="54"/>
+							</Node>
+							<Prp name="bottom" type="I" value="65"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="52"/>
+						</Node>
+						<Node name="5">
+							<Prp name="bottom" type="I" value="81"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="67"/>
+						</Node>
+						<Node name="6">
+							<Prp name="bottom" type="I" value="86"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="83"/>
+						</Node>
+						<Node name="7">
+							<Prp name="bottom" type="I" value="93"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="89"/>
+						</Node>
+						<Node name="8">
+							<Prp name="bottom" type="I" value="123"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="95"/>
+						</Node>
+						<Node name="9">
+							<Prp name="bottom" type="I" value="149"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="125"/>
+						</Node>
+						<Prp name="bottom" type="I" value="184"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{f0b7a00c-079b-4354-9ac1-4809b2823d97}">
+						<Prp name="bottom" type="I" value="103"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{f6ecb307-18e5-4b00-8f51-64e30f9bc549}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="29"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="3"/>
+						</Node>
+						<Prp name="bottom" type="I" value="30"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{f83191a6-9797-4c73-848f-400e60e9818f}">
+						<Prp name="bottom" type="I" value="11"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{f867ba2e-a515-456c-a5ea-661b422018ea}">
+						<Prp name="bottom" type="I" value="0"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+				</Node>
+			</Node>
+			<Node name="{d02cce92-fd05-4f42-a803-fe08e8104e33}">
+				<Node name="hosts">
+					<Prp name="browser.sortorder" type="I" value="0"/>
+					<Prp name="enabled.sortorder" type="I" value="0"/>
+					<Prp name="os.sortorder" type="I" value="0"/>
+					<Prp name="resolution.sortorder" type="I" value="0"/>
+				</Node>
+				<Node name="tests">
+					<Node name="items"/>
+					<Prp name="focused" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+					<Prp name="width" type="I" value="0"/>
+				</Node>
+			</Node>
+			<Node name="{dadeeeea-7bf7-4f7b-98d1-fc8ffe5fedae}">
+				<Node name="{02542b04-194a-4903-b727-27ddea5f3f24}"/>
+				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
+			</Node>
+			<Node name="{fc9c0755-2819-4b25-8964-06a87b81e1ad}">
+				<Node name="cashalot_suite">
+					<Node name="cashalot">
+						<Node name="events"/>
+						<Node name="networksuite">
+							<Node name="jobs">
+								<Node name="job1"/>
+							</Node>
+						</Node>
+						<Node name="script">
+							<Node name="core">
+								<Node name="handlers">
+									<Node name="common"/>
+								</Node>
+							</Node>
+							<Node name="data"/>
+							<Node name="extension"/>
+							<Node name="testdata"/>
+							<Node name="tests"/>
+						</Node>
+						<Node name="stores">
+							<Node name="xml"/>
+						</Node>
+					</Node>
+				</Node>
+				<Node name="cashalot_suite logs">
+					<Node name="cashalot logs"/>
+				</Node>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{8EBE6EB3-803D-4913-AD7A-D71552123A67}"/>
+	</Node>
+</Nodes>

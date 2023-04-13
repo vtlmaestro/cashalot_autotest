@@ -1,0 +1,13 @@
+﻿//USEUNIT Cashalot
+
+var cashalotApp;
+
+//function InitTest(Sender)
+//{
+//  dotNET.Helper_x64.SessionController.DeleteSessionsByAddress("10.200.87.87");
+//}
+
+function TearDownTest(Sender)
+{
+  //cashalotApp.Dispose();
+}

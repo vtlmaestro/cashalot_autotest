@@ -1,0 +1,5 @@
+﻿var INCORRECT_PASS_MESSAGE_LOGINFORM = "Відсутній ключ до сертифікату або вказано некоректний пароль!";
+var CORRECT_PROXY_CONNECTION = "Перевірка з'єднання виконана вдало!";
+var MessageNoDataForReportGeneration = "Відсутні дані для формування звіту";
+var OpenShift = "Зміна відкрита";
+

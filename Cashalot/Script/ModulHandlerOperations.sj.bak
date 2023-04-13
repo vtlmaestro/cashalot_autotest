@@ -1,0 +1,369 @@
+﻿//USEUNIT Objects
+//USEUNIT CONST
+//USEUNIT UtilsCashalot
+
+//Модуль Відкладені чеки
+function UCPostponedReceipts()
+{
+  this.ModuleName = "Відкладені чеки";
+  
+  var grid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid;
+  
+  this.Receipts = new List();
+  
+  this.PrroList = new List();
+  
+  this.UsersList = new List();
+  
+  this.UsersUCPostponedReceiptsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox;   
+  this.PrroUCPostponedReceiptsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2;
+  this.PeriodPicker = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker;
+  
+  for(var i=0; i<grid.Items.Count; i++)
+  {
+    this.Receipts.Add(new Objects.Receipt(grid.Items.get_Item(i), grid));
+  }
+  
+  var UsersCmbObjCmb = new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox);
+  var PrroCmbObjCmb = new Objects.ComboBox(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2);
+  this.PrroList = PrroCmbObjCmb.Items;
+  this.UsersList = UsersCmbObjCmb.Items;
+  
+  this.SelectUserNameUCPostponedReceipts = function(userName)
+  {
+    for(i=0; i<this.UsersUCPostponedReceiptsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.UsersUCPostponedReceiptsCmb.Text.OleValue, userName, true) == 0)
+        {
+            aqUtils.Delay(500);
+            this.UsersUCPostponedReceiptsCmb.SelectNext();
+        }
+        else if(this.UsersUCPostponedReceiptsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.UsersUCPostponedReceiptsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectPrroNameUCPostponedReceipts = function(prroName)
+  {
+    for(i=0; i<this.PrroUCPostponedReceiptsCmb.wItemCount; i++)
+    {
+      if(aqString.Compare(this.PrroUCPostponedReceiptsCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+      {
+      this.PrroUCPostponedReceiptsCmb.SelectItemWithValue(this.PrroUCPostponedReceiptsCmb.Items.get_Item(i), true);
+      break;
+      }
+    }
+//      { 
+//      if(!aqString.Compare(this.PrroUCPostponedReceiptsCmb.Text.OleValue, prroName, true) == 0)
+//        {
+//          aqUtils.Delay(500);
+//          this.PrroUCPostponedReceiptsCmb.SelectNext();
+//        }
+//        else if(this.PrroUCPostponedReceiptsCmb.wItemCount == 1)
+//        {
+//            aqUtils.Delay(500);
+//            this.PrroUCPostponedReceiptsCmb.SelectNext();          
+//        }
+//        else
+//        {
+//          break;
+//        }
+//      }
+  }
+  
+  this.SelectStartEndPeriod = function()
+  {
+  Objects.updatePeriod(UtilsCashalot.GetCurrentDate("dd.MM.yyyy"), UtilsCashalot.GetCurrentDate("dd.MM.yyyy"));
+  }
+  
+  //не рабочий
+  this.SelectUserUCPostponedReceipts = function(user)
+  {
+    ComboBox(UsersCmbObjCmb);
+    UserObj.SelectItem(user);
+  }
+  //не рабочий
+  this.SelectPrroUCPostponedReceipts = function(prro)
+  {
+    PrroCmbObjCmb.SelectItem(prro);
+  }
+}
+
+//Модуль Касові документи
+function CashDocuments()
+{
+  this.ModuleName = "Касові документи";
+  this.PeriodPicker = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.PeriodPicker;
+  this.OperationDocumentCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox;
+  this.PrroCashDocumentsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2;
+  this.GoCashDocumentsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox3;
+  this.UserCashDocumentsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox4;
+  
+  var grid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid;
+  
+  this.SelectUserNameCashDocuments = function(userName)
+  {
+    for(i=0; i<this.UserCashDocumentsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.UserCashDocumentsCmb.Items.get_Item(i).FIO.OleValue, userName, true) == 0)
+        {
+            aqUtils.Delay(500);
+            this.UserCashDocumentsCmb.SelectNext();
+        }
+        else if(this.UserCashDocumentsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.UserCashDocumentsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectPrroNameCashDocuments = function(prroName)
+  {
+    for(i=0; i<this.PrroCashDocumentsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.PrroCashDocumentsCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.PrroCashDocumentsCmb.SelectNext();
+        }
+        else if(this.PrroCashDocumentsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.PrroCashDocumentsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+    this.SelectGONameCashDocuments = function(goName)
+  {
+    for(i=0; i<this.GoCashDocumentsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.GoCashDocumentsCmb.Items.get_Item(i).Name.OleValue, goName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.GoCashDocumentsCmb.SelectNext();
+        }
+        else if(this.GoCashDocumentsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.GoCashDocumentsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectOperationDocumentNameCashDocuments = function(operationDocumentName)
+  {
+    for(i=0; i<this.OperationDocumentCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.OperationDocumentCmb.Items.get_Item(i).Value.OleValue, operationDocumentName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.OperationDocumentCmb.SelectNext();
+        }
+        else if(this.OperationDocumentCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.OperationDocumentCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectStartEndPeriod = function()
+  {
+  Objects.updatePeriod(UtilsCashalot.GetCurrentDate("dd.MM.yyyy"), UtilsCashalot.GetCurrentDate("dd.MM.yyyy"));
+  }
+}
+
+
+//Модуль Історія операцій
+function OperationsHistory()
+{ 
+  var mainwnd =  Aliases.CashaLot.HwndSource_mainWindow.mainWindow_;
+  this.ModuleName = "Історія операцій";
+  this.PrroOperationsHistoryCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox;
+  this.GoOperationsHistoryCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox2;
+  this.UserOperationsHistoryCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox5;
+  this.TypePayCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox4;
+  this.MethodPayCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox3;
+  this.NumberCheckCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.TextBox;
+  this.SimpleSearch = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.SimpleSearch;
+  this.DataContext = mainwnd.DockPanel.DataContext;
+  
+    //Відкрити Розширений пошук
+  function ShowOrHideAdditionalSearch(show)
+  {
+    //Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0) - Получаем грид
+    //Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0).Child(5) - из грида получаем рядок который меняет всю высоту в зависимости от того скрыты или нет доп. параметры поиска  
+  
+    var currentVisibleState = (Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0).Child(5).ActualHeight > 0);
+    var AdditionalSearchButton = mainwnd.DockPanel.AdvancedSearch;
+    
+    if(show)
+    {
+      if(!currentVisibleState)
+        AdditionalSearchButton.Click();
+      if(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0).Child(5).ActualHeight > 0)
+          Log.Message("Розширений пошук відкрито"); 
+      else
+          Log.Error("Розширений пошук не відкрито");
+    }
+    else
+    {
+      if(currentVisibleState)
+        AdditionalSearchButton.Click();
+      if(Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Child(0).Child(5).ActualHeight == 0)
+          Log.Message("Розширений пошук не відкрито");
+      else
+          Log.Error("Розширений пошук відкрито");
+    }
+  }
+  
+//  this.ShowAditionalSearch = ShowOrHideAdditionalSearch(true);
+//  this.HideAditionalSearch = ShowOrHideAdditionalSearch(false);
+  
+  this.SelectGONameOperationsHistory = function(goName)
+  {
+    for(i=0; i<this.GoOperationsHistoryCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.GoOperationsHistoryCmb.Items.get_Item(i).Name.OleValue, goName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.GoOperationsHistoryCmb.SelectNext();
+        }
+        else if(this.GoOperationsHistoryCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.GoOperationsHistoryCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectPrroNameOperationsHistory = function(prroName)
+  {
+    for(i=0; i<this.PrroOperationsHistoryCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.PrroOperationsHistoryCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.PrroOperationsHistoryCmb.SelectNext();
+        }
+        else if(this.PrroOperationsHistoryCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.PrroOperationsHistoryCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectUserNameOperationsHistory = function(userName)
+  {
+    ShowOrHideAdditionalSearch(true);
+
+    for(i=0; i<this.UserOperationsHistoryCmb.wItemCount; i++)
+      { 
+      if(aqString.Compare(this.UserOperationsHistoryCmb.Items.get_Item(i).FIO.OleValue, userName, true) == 0)
+        {
+          this.UserOperationsHistoryCmb.SelectItemWithValue(this.UserOperationsHistoryCmb.Items.get_Item(i), true)
+          break;
+        }
+//        else
+//        {
+//          this.UserOperationsHistoryCmb.SelectNext();
+//        }
+      }
+  }
+  
+  this.SelectTypePayOperationsHistory = function(typePayName)
+  {
+    ShowOrHideAdditionalSearch(true);
+
+    for(i=0; i<this.TypePayCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.TypePayCmb.Items.get_Item(i).Value.OleValue, typePayName, true) == 0)
+        {
+            aqUtils.Delay(500);
+            this.TypePayCmb.SelectNext();
+        }
+        else if(this.TypePayCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.TypePayCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.SelectMethodPayOperationsHistory = function(typePayName)
+  {
+    ShowOrHideAdditionalSearch(true);
+
+    for(i=0; i<this.MethodPayCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.MethodPayCmb.Items.get_Item(i).Text.OleValue, typePayName, true) == 0)
+        {
+            aqUtils.Delay(500);
+            this.MethodPayCmb.SelectNext();
+        }
+        else if(this.MethodPayCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.MethodPayCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+  
+  this.InsertNumberCheckOperationsHistory = function(numberCheck)
+  {
+    this.NumberCheckCmb.set_Text(numberCheck);
+  }
+  
+  this.SearchBtClick = function()
+  {
+    this.SimpleSearch.ClickButton();
+    Log.Message("Натиснули кнопку пошуку в розділі 'Історія операцій'");
+  }
+  
+  this.SelectStartEndPeriod = function()
+  {
+  Objects.updatePeriod(UtilsCashalot.GetCurrentDate("dd.MM.yyyy"), UtilsCashalot.GetCurrentDate("dd.MM.yyyy"));
+  }
+}

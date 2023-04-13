@@ -1,0 +1,196 @@
+﻿
+
+
+//Модуль Денні звіти
+function DailyReports()
+{
+  var mainwnd =  Aliases.CashaLot.HwndSource_mainWindow.mainWindow_;
+
+  this.ModuleName = "Денні звіти";
+  this.PrroDailyReportsCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox;
+  
+  
+    this.SelectPrroNameDailyReports = function(prroName)
+  {
+    for(i=0; i<this.PrroDailyReportsCmb.wItemCount; i++)
+      { 
+      if(!aqString.Compare(this.PrroDailyReportsCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+        {
+          aqUtils.Delay(500);
+          this.PrroDailyReportsCmb.SelectNext();
+        }
+        else if(this.PrroDailyReportsCmb.wItemCount == 1)
+        {
+            aqUtils.Delay(500);
+            this.PrroDailyReportsCmb.SelectNext();          
+        }
+        else
+        {
+          break;
+        }
+      }
+  }
+}
+
+//Модуль Періодичні звіти
+function PeriodicalReportsPrepareView()
+{
+  this.ModuleName = "Періодичні звіти";
+  this.GoPeriodicalReportsCmb = Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.UCPeriodicalReportPrepare.cmbBU;                               
+  this.PrroPeriodicalReportsCmb = Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.UCPeriodicalReportPrepare.cmbPRRO;
+  
+  this.SelectGONamePeriodicalReports = function(goName)
+  {
+    for(i=0; i<this.GoPeriodicalReportsCmb.wItemCount; i++)
+      { 
+      this.GoPeriodicalReportsCmb.SelectNext();
+      if(aqString.Compare(this.GoPeriodicalReportsCmb.Items.get_Item(i).Name.OleValue, goName, true) == 0)
+        {
+         break;
+        }
+        else if(this.GoPeriodicalReportsCmb.wItemCount == 1)
+        {
+         this.GoPeriodicalReportsCmb.SelectNext();          
+        }
+      }
+  }
+
+  this.SelectPrroNamePeriodicalReports = function(prroName)
+  {
+    for(i=0; i<this.PrroPeriodicalReportsCmb.wItemCount; i++)
+      { 
+      this.PrroPeriodicalReportsCmb.SelectNext();
+      if(aqString.Compare(this.PrroPeriodicalReportsCmb.Items.get_Item(i).Name.OleValue, prroName, true) == 0)
+        {
+         break;
+        }
+        else if(this.PrroPeriodicalReportsCmb.wItemCount == 1)
+        {
+         this.PrroPeriodicalReportsCmb.SelectNext();          
+        }
+      }
+  }
+  
+  this.CreatePeriodicalReport = function()
+  {
+  this.CreateReportButton = Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.UCPeriodicalReportPrepare.Button2;
+  this.MessageWindow = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow;
+  this.CansellButton = Aliases.CashaLot.HwndSource_WindowDialog3.WindowDialog.UCPeriodicalReportPrepare.Button;
+  this.CreateReportButton.ClickButton();
+  aqUtils.Delay(500);
+  if(this.MessageWindow.Exists && aqString.Compare(this.MessageWindow.Message.OleValue, MessageNoDataForReportGeneration, false) == 0)
+  {
+    this.MessageWindow.Button_OK.ClickButton();
+    this.CansellButton.ClickButton();
+  }
+  }
+}
+
+//Модуль Про реалізовані товари
+function AboutSoldGoods()
+{
+  this.ChooseGOCmb = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbBU;
+  this.AdditionalFilters = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.Textblock;
+  this.ChooseProductGroup = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGroupProduct;
+  this.ChooseCashier = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbUser;
+  this.ChoosePRRO = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbPRRO;
+  this.ChooseZzvit = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbZzvit;
+  this.ChooseProduct = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.cmbGoodsService;
+  
+  this.SelectGONameAboutSoldGoods = function(goName)
+  {
+    for(i=0; i<this.ChooseGOCmb.wItemCount; i++)
+      { 
+      this.ChooseGOCmb.SelectNext();
+      if(aqString.Compare(this.ChooseGOCmb.Items.get_Item(i).Name.OleValue, goName, true) == 0)
+        {
+         break;
+        }
+        else if(this.ChooseGOCmb.wItemCount == 1)
+        {
+         this.ChooseGOCmb.SelectNext();          
+        }
+      }
+  }
+  
+  
+  this.SelectProductGroupSoldGoods = function(productGroupName)
+  {
+    for(i=0; i<this.ChooseProductGroup.DataContext.GoodsGroups.Count; i++)
+      { 
+      if(aqString.Compare(this.ChooseProductGroup.DataContext.GoodsGroups.get_Item(i).Name.OleValue, productGroupName, true) == 0)
+        {
+         this.ChooseProductGroup.DataContext.set_SelectedGoodsGroup(this.ChooseProductGroup.DataContext.GoodsGroups.get_Item(i));
+        }
+      }
+  }
+  
+  this.SelectCashierSoldGoods = function(cashierName)
+  {
+    for(i=0; i<this.ChooseCashier.DataContext.PayMasters.Count; i++)
+      { 
+      if(aqString.Compare(this.ChooseCashier.DataContext.PayMasters.get_Item(i).FIO.OleValue, cashierName, true) == 0)
+        {
+         this.ChooseCashier.DataContext.set_SelectedPayMaster(this.ChooseCashier.DataContext.PayMasters.get_Item(i));
+        }
+      }
+  }
+  
+  this.SelectPRROSoldGoods = function(prroName)
+  {
+    for(i=0; i<this.ChoosePRRO.DataContext.RroSource.Count; i++)
+      { 
+      if(aqString.Compare(this.ChoosePRRO.DataContext.RroSource.get_Item(i).Name.OleValue, prroName, true) == 0)
+        {
+         this.ChoosePRRO.DataContext.set_SelectedRro(this.ChoosePRRO.DataContext.RroSource.get_Item(i));
+        }
+      }
+  }
+  
+  this.SelectZzvitSoldGoods = function(zzvitName)
+  {
+    for(i=0; i<this.ChooseZzvit.DataContext.ZReports.Count; i++)
+      { 
+      if(aqString.Compare(this.ChooseZzvit.DataContext.ZReports.get_Item(i).Name.OleValue, zzvitName, true) == 0)
+        {
+         this.ChooseZzvit.DataContext.set_SelectedZReport(this.ChooseZzvit.DataContext.ZReports.get_Item(i));
+        }
+      }
+  }
+ //SelectedGoods не доделан в Кашалоте
+  this.SelectProductSoldGoods = function(productName)
+  {
+//    //Засетить данные в поле SelectedGoods
+//    this.ChooseProduct.get_DataContext().set_SelectedGoods("Інше333");
+//    for(i=0; i<this.ChooseProduct.DataContext.SelectedGoods.Count; i++)
+//      { 
+//      if(aqString.Compare(this.ChooseProduct.DataContext.SelectedGoods.get_Item(i).Name.OleValue, productName, true) == 0)
+//        {
+//         this.ChooseProduct.DataContext.set_SelectedGoods(this.ChooseProduct.DataContext.SelectedGoods.get_Item(i));
+//        }
+//      }
+  }
+  
+  
+  this.OpenAdditionalFilter = function()
+  {
+  this.AdditionalFilters.Click();
+  }
+  
+  this.CreateSoldGoodsReport = function()
+  {
+  this.CreateReportButton = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.Button2;
+  this.MessageWindow = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow;
+  this.CansellButton = Aliases.CashaLot.HwndSource_WindowDialog4.WindowDialog.UCReportGoodsPrepare.Button;
+  this.CreateReportButton.ClickButton();
+  aqUtils.Delay(500);
+  this.MessageObject = new MessageBox(this.MessageWindow);
+  if(this.MessageObject.Obj.Exists && aqString.Compare(this.MessageObject.Text, MessageNoDataForReportGeneration, false) == 0)
+//  if(this.MessageWindow.Exists && aqString.Compare(this.MessageWindow.Message.OleValue, MessageNoDataForReportGeneration, false) == 0)
+     {
+//      this.MessageWindow.Button_OK.ClickButton();
+      this.MessageObject.Ok();
+      this.CansellButton.ClickButton();
+     }
+  }
+}

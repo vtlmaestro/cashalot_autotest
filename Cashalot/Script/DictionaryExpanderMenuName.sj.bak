@@ -1,0 +1,11 @@
+﻿
+function MenuName()
+{
+  
+  var menuNameDictionary = getActiveXObject("Scripting.Dictionary");
+
+  // Add keys and items.
+  menuNameDictionary.Add("Відкладені чеки", "Операції");
+  menuNameDictionary.Add("Касові документи", "Операції");
+  menuNameDictionary.Add("Історія операцій", "Операції");
+}

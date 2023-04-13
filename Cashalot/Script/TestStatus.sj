@@ -1,0 +1,11 @@
+﻿var FAIL = "FAIL";
+var PASS = "PASS";
+var BLOCK = "BLOCK";
+var UNKNOWN = "UNKNOWN";
+
+var STEP_PASS = 1;
+var STEP_FAIL = 2;
+var STEP_INPROCESS = 3;
+var STEP_BLOCK = 4;
+var STEP_UNEXECUTED = 5;
+var STEP_TERMINATED = 6;

@@ -1,0 +1,339 @@
+﻿//USEUNIT Parameters
+//USEUNIT WinHandler
+
+//Грид открытой смены
+function WorkOpenShiftGrid()
+{
+var dataContextReceiptVMWorkShiftGrid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel;
+var DockPanelReceiptGrid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.ReceiptGrid;
+var UCGrid = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_;
+var CrtNewCheckBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.btnNewReceipt.CrtReceiptBtnDefault;
+var AsideCheckBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.btnStallReceipt;
+var CancelCheckBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.btnCancelReceipt;
+//Повернення
+var RefundBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.btnReturnReceipt;
+var SearchProduct = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.txbEnterGoods;
+var ConfirmPostponedReceiptBtn = Aliases.CashaLot.HwndSource_WindowDialog5.WindowDialog.Border.UCConfirmPostponedReceipt.Button;
+
+this.NewCheckLocalNumber;
+this.NewCheckOrderNum;
+
+
+ //Создать чек
+ this.CreateNewCheck = function(nameproduct)
+  {
+  CrtNewCheckBtn.Click();
+  SearchProduct.Keys(nameproduct);
+  SearchProduct.Keys(ENTER);
+  this.NewCheckLocalNumber = DockPanelReceiptGrid.DataContext.ReceiptVM.LocalNumber;
+  this.NewCheckOrderNum = DockPanelReceiptGrid.DataContext.ReceiptVM.Model.Ordernum;
+  var newReceipt = new Objects.Receipt(dataContextReceiptVMWorkShiftGrid, DockPanelReceiptGrid);
+  return newReceipt;
+  }
+ //Отложить чек
+ this.AsideCheck = function()
+  {
+  var asideBtn = new Button(AsideCheckBtn);
+  asideBtn.ClickBtn();
+  ConfirmPostponedReceiptBtn.Click();
+  }
+  
+  this.RegisterCheckDPS = function()
+  {
+    var RegisterCheckDPSBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.Button3;
+    RegisterCheckDPSBtn.Click();
+    aqUtils.Delay(1500);
+  }
+  
+  //Сделать оплату
+ this.CreatePayment = function()
+ {
+  //Оплата без решти
+  var PaymentWithoutRemainder = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptOperationsStart.Button;
+  //Знижка
+  var Discount = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptOperationsStart.Button2;
+  //Оплата готівкою
+  var PaymentCash = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptOperationsStart.Button3;
+  //Оплата карткою
+  var PaymentCard = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Button99;
+  //Комбінована оплата 
+  var CombinedPayment = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.Button2;
+  //Провести оплату
+  var MakePayButton = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.PayButton;
+  //Зареєструвати чек в ДПС
+  var RegisterCheckDPSBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.Button3;
+  //Вікно результу фіскалізації
+  var ReceiptFiscalized = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.UCReceiptFiscalized;
+  
+  
+  //Оплата без решти
+  this.makePaymentWithoutRemainder = function()
+  {
+    PaymentWithoutRemainder.Click();
+    RegisterCheckDPSBtn.Click();
+    aqUtils.Delay(1500);
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WaitWPFObject("Border","*",3).Exists)
+    {
+    var confirmPwd = new WinHandler.UCConfirmPwd();
+    confirmPwd.EnterPassword(USERCERTPASSWORD);
+    confirmPwd.Ok();
+    if(ReceiptFiscalized.Exists && aqString.Compare(ReceiptFiscalized.DataContext.ReceiptVM.StatusName.OleValue, REGISTERED, true) == 0)
+    {
+      return true;
+    }
+    else
+     {
+      return false;
+     }
+    }
+    else
+    {
+      Log.Error("Не знайдено вікно для вводу пароля");
+    }
+  }
+  //Знижка
+  this.makeDiscount = function()
+  {
+    Discount.Click();
+    MakePayButton.Click();
+    RegisterCheckDPSBtn.Click();
+    aqUtils.Delay(1500);
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WaitWPFObject("Border","*",3).Exists)
+    {
+    var confirmPwd = new WinHandler.UCConfirmPwd();
+    confirmPwd.EnterPassword(USERCERTPASSWORD);
+    confirmPwd.Ok();
+    if(ReceiptFiscalized.Exists && aqString.Compare(ReceiptFiscalized.DataContext.ReceiptVM.StatusName.OleValue, REGISTERED, true) == 0)
+    {
+      return true;
+    }
+    else
+     {
+      return false;
+     }
+    }
+    else
+    {
+      Log.Error("Не знайдено вікно для вводу пароля");
+    }
+  }
+  //Оплата готівкою
+  this.makePaymentCash = function()
+  {
+    PaymentCash.Click();
+    MakePayButton.Click();
+    RegisterCheckDPSBtn.Click();
+    aqUtils.Delay(1500);
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WaitWPFObject("Border","*",3).Exists)
+    {
+    var confirmPwd = new WinHandler.UCConfirmPwd();
+    confirmPwd.EnterPassword(USERCERTPASSWORD);
+    confirmPwd.Ok();
+    if(ReceiptFiscalized.Exists && aqString.Compare(ReceiptFiscalized.DataContext.ReceiptVM.StatusName.OleValue, REGISTERED, true) == 0)
+    {
+      return true;
+    }
+    else
+     {
+      return false;
+     }
+    }
+    else
+    {
+      Log.Error("Не знайдено вікно для вводу пароля");
+    }
+  }
+  //Оплата карткою
+  this.makePaymentCard = function()
+  {
+    PaymentCard.Click();
+    MakePayButton.Click();
+    RegisterCheckDPSBtn.Click();
+    aqUtils.Delay(1500);
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WaitWPFObject("Border","*",3).Exists)
+    {
+    var confirmPwd = new WinHandler.UCConfirmPwd();
+    confirmPwd.EnterPassword(USERCERTPASSWORD);
+    confirmPwd.Ok();
+    if(ReceiptFiscalized.Exists && aqString.Compare(ReceiptFiscalized.DataContext.ReceiptVM.StatusName.OleValue, REGISTERED, true) == 0)
+    {
+      return true;
+    }
+    else
+     {
+      return false;
+     }
+    }
+    else
+    {
+      Log.Error("Не знайдено вікно для вводу пароля");
+    }
+  }
+  //Комбінована оплата 
+  this.makeCombinedPayment = function()
+  {
+    CombinedPayment.Click();
+    MakePayButton.Click();
+    RegisterCheckDPSBtn.Click();
+    aqUtils.Delay(1500);
+    if(Aliases.CashaLot.HwndSource_WindowDialog.WindowDialog.WPFObject("Border", "", 1).WPFObject("Grid", "", 1).WaitWPFObject("Border","*",3).Exists)
+    {
+    var confirmPwd = new WinHandler.UCConfirmPwd();
+    confirmPwd.EnterPassword(USERCERTPASSWORD);
+    confirmPwd.Ok();
+    if(ReceiptFiscalized.Exists && aqString.Compare(ReceiptFiscalized.DataContext.ReceiptVM.StatusName.OleValue, REGISTERED, true) == 0)
+    {
+      return true;
+    }
+    else
+     {
+      return false;
+     }
+    }
+    else
+    {
+      Log.Error("Не знайдено вікно для вводу пароля");
+    }
+  }
+ }  
+ 
+ //Повернення коштів
+ this.Refund = function()
+ {
+   var SelectPrroNumCmb = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.ComboBox;
+   var FiscalNumTextBox = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.FiscalNumberTextbox;
+   //Button Повернення готівкою
+   var RefundCashBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.Button4;
+   //Button Повернення безготівкове
+   var CashlessReturnBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.Button5
+   //Button Повернення комбіноване
+   var CombinedReturnBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.Button6;
+   //Кнопка Повернення
+   var ClickRefundBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.btnReturnReceipt
+   
+   //Нажать кнопку Повернення 
+   this.ClickRefund = function()
+   {
+     ClickRefundBtn.Click();
+   }
+   
+   this.setTextFiscalNumBox = function(checkFiscalNumber)
+   {
+     FiscalNumTextBox.set_Text(checkFiscalNumber);
+   }
+   
+   this.SelectPrroNum = function(prroFiscalNumber)
+   {
+     for(i=0; i<SelectPrroNumCmb.wItemCount; i++)
+      {
+        if(aqString.Compare(SelectPrroNumCmb.Items.get_Item(i).OleValue, prroFiscalNumber, true) == 0)
+        {
+          SelectPrroNumCmb.SelectItemWithValue(SelectPrroNumCmb.Items.get_Item(i), true)
+          break;
+        }
+      }
+   }
+   
+   //Нажать кнопку Перевірити
+   this.ClickSearchBtn = function()
+   {
+     var SearchBtn = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.UC_.leftSideDockPanel.SearchButton;
+     SearchBtn.Click();
+   }
+   
+   //Кнопка Продовжити повернення  
+   this.ContinueRefund = function()
+   {
+     var ScrollViewerWPFControlText = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Scrollviewer.WPFControlText;
+     var OkBtn = Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.CustomMessageBoxWindow.Button_OK;
+     if(Aliases.CashaLot.HwndSource_CustomMessageBoxWindow.WaitWPFObject("CustomMessageBoxWindow", "*", 3).Exists && aqString.Find(ScrollViewerWPFControlText, CHECKSUCCESS, 0, true)==0)
+     {
+       OkBtn.Click();
+       return true;
+     }
+     else
+     {
+       Log.Message("Не знайдено зареєстрований чек за вказаним фіскальним номером");
+       return false;
+     }
+     
+   }
+   
+   //Повернення готівкою
+   this.RefundCash = function()
+   {
+     RefundCashBtn.Click();
+     WinHandler.InsertPWD();
+     aqUtils.Delay(1500);
+     var gridOpenShift = new WorkOpenShiftGrid();
+     gridOpenShift.RegisterCheckDPS();
+     WinHandler.InsertPWD();
+     var refundNewCheck = new Objects.Receipt(dataContextReceiptVMWorkShiftGrid, DockPanelReceiptGrid);
+     return refundNewCheck;
+   }
+   
+   //Повернення безготівкове
+   this.CashlessReturn = function()
+   {
+     CashlessReturnBtn.Click();
+     WinHandler.InsertPWD();
+     aqUtils.Delay(1500);
+     var gridOpenShift = new WorkOpenShiftGrid();
+     gridOpenShift.RegisterCheckDPS();
+     WinHandler.InsertPWD();
+     var cashlessNewReturn = new Objects.Receipt(dataContextReceiptVMWorkShiftGrid, DockPanelReceiptGrid);
+     return cashlessNewReturn;
+   }
+   
+   //Повернення комбіноване
+   this.CombinedReturn = function()
+   {
+     CombinedReturnBtn.Click();
+     WinHandler.InsertPWD();
+     aqUtils.Delay(1500);
+     var gridOpenShift = new WorkOpenShiftGrid();
+     gridOpenShift.RegisterCheckDPS();
+     WinHandler.InsertPWD();
+     var combinedNewReturn = new Objects.Receipt(dataContextReceiptVMWorkShiftGrid, DockPanelReceiptGrid);
+     return combinedNewReturn;
+   }
+ }
+}
+
+//Грид Відкладені чеки
+function DockPanelGridAsideCheck()
+{
+ var GridAsideCheck = Aliases.CashaLot.HwndSource_mainWindow.mainWindow_.DockPanel.zgrid;
+
+ //Знайти Відкладений чек на поточну дату та з вказанним локальним номером (localNumber)
+ this.FindAsideCheck = function(localNumCheck)
+ {
+  var dateNow = dotNET.System.DateTime.Now().ToShortDateString().OleValue;
+  
+  for(i=0; i<GridAsideCheck.Items.Count; i++)
+  {
+   if(GridAsideCheck.Items.get_Item(i).OrderDate.Date.Compare(GridAsideCheck.Items.get_Item(i).OrderDate.Date.OleValue, dateNow) == 0 
+   && GridAsideCheck.Items.get_Item(i).LocalNumber == localNumCheck)
+    {
+     return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
